@@ -1,0 +1,1 @@
+sass --watch /Users/shahnewaz/wp/diego/wp-content/themes/diego/assets/scss/main.scss:/Users/shahnewaz/wp/diego/wp-content/themes/diego/assets/css/diego-core.css

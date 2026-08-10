@@ -1,0 +1,71 @@
+
+---Downloaded files---
+The import files for: Home Freelancer were successfully downloaded!
+Initial max execution time = 360
+Files info:
+Site URL = https://portfolio.monicajivnani.online
+Data file = /home/u705058080/domains/monicajivnani.online/public_html/__Portfolio/wp-content/themes/diego/sample-data/contents-demo.xml
+Widget file = /home/u705058080/domains/monicajivnani.online/public_html/__Portfolio/wp-content/themes/diego/sample-data/widget-settings.json
+Customizer file = /home/u705058080/domains/monicajivnani.online/public_html/__Portfolio/wp-content/themes/diego/sample-data/customizer-data.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Blog Sidebar : 
+
+Search - Search - Imported
+Categories - Categories - Imported
+TP Sidebar Posts Image - Recent Post - Imported
+Tag Cloud - Tags - Imported
+
+Footer 1 : 
+
+Diego :: About (footer) - No Title - Imported
+
+Footer 2 : 
+
+Navigation Menu - Explore - Imported
+
+Footer 3 : 
+
+Diego :: Address (footer) - Address - Imported
+
+Footer 4 : 
+
+Diego :: Contact (footer) - Say Hello - Imported
+
+
+
+---Importing customizer settings---
+Error: The customizer import file is not in a correct format. Please make sure to use the correct customizer import file.
+
+---ocdi/after_import---
+

@@ -1,0 +1,1454 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Diego\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-11 08:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.4.3\n"
+"X-Domain: diego"
+
+#: comments.php:25
+msgid " Comment "
+msgstr ""
+
+#: comments.php:25
+msgid " Comments"
+msgstr ""
+
+#: template-parts/offcanvas/offcanvas-1.php:24
+#: template-parts/offcanvas/offcanvas-2.php:24
+msgid " hello contact@diego.com"
+msgstr ""
+
+#: inc/template-helper.php:415 inc/template-helper.php:416
+#: inc/template-helper.php:417 inc/template-helper.php:418
+#: inc/template-helper.php:419 inc/template-helper.php:452
+#: inc/template-helper.php:453 inc/template-helper.php:454
+#: inc/template-helper.php:455 inc/template-helper.php:493
+#: inc/template-helper.php:494 inc/template-helper.php:495
+#: inc/template-helper.php:496 inc/template-helper.php:559
+#: inc/template-helper.php:560 inc/template-helper.php:561
+#: inc/template-helper.php:562 inc/template-helper.php:563
+#: inc/kirki-backup.php:177 inc/kirki-backup.php:196 inc/kirki-backup.php:456
+#: inc/kirki-backup.php:497 inc/kirki-backup.php:507 inc/kirki-backup.php:518
+#: inc/kirki-backup.php:528 inc/kirki-customizer.php:216
+#: inc/kirki-customizer.php:439 inc/kirki-customizer.php:449
+#: inc/kirki-customizer.php:460 inc/kirki-customizer.php:470
+#: template-parts/offcanvas/offcanvas-2.php:29
+#: template-parts/header/header-4.php:18 template-parts/header/header-4.php:21
+#: template-parts/header/header-5.php:18 template-parts/header/header-5.php:21
+#: template-parts/header/header-7.php:18 template-parts/header/header-7.php:21
+#: template-parts/header/header-6.php:18 template-parts/header/header-6.php:21
+#: template-parts/header/header-2.php:19 template-parts/header/header-2.php:22
+#: template-parts/header/header-3.php:19 template-parts/header/header-1.php:21
+#: template-parts/header/header-8.php:18 template-parts/header/header-8.php:21
+#: template-parts/header/header-9.php:18 template-parts/header/header-9.php:21
+msgid "#"
+msgstr ""
+
+#: comments.php:51
+msgid "&larr; Older "
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:464
+#: inc/woocommerce/tp-woocommerce.php:895
+#: inc/woocommerce/tp-woocommerce.php:1010
+#: inc/woocommerce/tp-woocommerce.php:1113
+#, php-format
+msgid "( %s Review )"
+msgid_plural "( %s Reviews )"
+msgstr[0] ""
+msgstr[1] ""
+
+#: template-parts/blog/search-result-meta.php:46
+msgid ")"
+msgstr ""
+
+#: inc/kirki-backup.php:407 inc/kirki-customizer.php:389
+#: template-parts/offcanvas/offcanvas-1.php:20
+#: template-parts/offcanvas/offcanvas-1.php:21
+#: template-parts/offcanvas/offcanvas-2.php:20
+#: template-parts/offcanvas/offcanvas-2.php:21
+msgid "+61404093 954"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:217
+msgid "-"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:491
+#: inc/woocommerce/tp-woocommerce.php:492
+#: inc/woocommerce/tp-woocommerce.php:493
+#: inc/woocommerce/tp-woocommerce.php:494
+#: inc/woocommerce/tp-woocommerce.php:692
+#: inc/woocommerce/tp-woocommerce.php:693
+#: inc/woocommerce/tp-woocommerce.php:694
+#: inc/woocommerce/tp-woocommerce.php:695
+msgid "0"
+msgstr ""
+
+#: inc/kirki-backup.php:724 inc/kirki-customizer.php:613
+msgid "1"
+msgstr ""
+
+#: inc/kirki-backup.php:244 inc/kirki-backup.php:373
+#: inc/kirki-customizer.php:264 inc/kirki-customizer.php:364
+msgid "120"
+msgstr ""
+
+#: inc/kirki-backup.php:725 inc/kirki-customizer.php:614
+msgid "2"
+msgstr ""
+
+#: inc/kirki-backup.php:726 inc/kirki-customizer.php:615
+msgid "3"
+msgstr ""
+
+#: inc/kirki-backup.php:727 inc/kirki-customizer.php:616
+msgid "4"
+msgstr ""
+
+#: 404.php:12
+msgid "404"
+msgstr ""
+
+#: inc/kirki-backup.php:948 inc/kirki-customizer.php:837
+msgid "404 Page"
+msgstr ""
+
+#: inc/kirki-backup.php:949 inc/kirki-customizer.php:838
+msgid "404 Page Settings."
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:343
+msgid "Account"
+msgstr ""
+
+#: inc/tp-metabox.php:372
+msgid "Add Product Feature"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:1649
+#: inc/woocommerce/tp-woocommerce.php:1658
+msgid "Add to Cart"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:761
+#: inc/woocommerce/tp-woocommerce.php:864
+#: inc/woocommerce/tp-woocommerce.php:972
+#: inc/woocommerce/tp-woocommerce.php:1083
+#: inc/woocommerce/tp-woocommerce.php:1191
+#: inc/woocommerce/tp-woocommerce.php:1297
+#: inc/woocommerce/tp-woocommerce.php:1441
+#: inc/woocommerce/tp-woocommerce.php:1562
+msgid "Add To Compare"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:1381
+msgid "Add To Wishlist"
+msgstr ""
+
+#: inc/kirki-backup.php:444
+msgid "Address Text"
+msgstr ""
+
+#: inc/kirki-backup.php:454
+msgid "Address URL"
+msgstr ""
+
+#: inc/add_plugin.php:132
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/tp-metabox.php:315
+msgid "Audio"
+msgstr ""
+
+#: inc/kirki-backup.php:446 template-parts/offcanvas/offcanvas-2.php:28
+msgid "Avenue de Roma 158b, Lisboa"
+msgstr ""
+
+#: 404.php:14
+msgid "Back To Home"
+msgstr ""
+
+#: inc/kirki-backup.php:297
+msgid "Back To Top Controls."
+msgstr ""
+
+#: inc/kirki-customizer.php:83
+msgid "Back To Top On/Off"
+msgstr ""
+
+#: inc/kirki-backup.php:296
+msgid "Back To Top Settings"
+msgstr ""
+
+#: inc/kirki-customizer.php:82
+msgid "Back To Top Switch"
+msgstr ""
+
+#: inc/add_plugin.php:122
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:112
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:117
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/template-helper.php:474
+msgid "Behance"
+msgstr ""
+
+#: inc/kirki-backup.php:516 inc/kirki-customizer.php:458
+msgid "Behance URL"
+msgstr ""
+
+#: inc/common/diego-breadcrumb.php:18 inc/common/diego-breadcrumb.php:22
+msgid "Blog"
+msgstr ""
+
+#: inc/kirki-backup.php:888 inc/kirki-customizer.php:777
+msgid "Blog Author Meta On/Off"
+msgstr ""
+
+#: inc/kirki-backup.php:865 inc/kirki-customizer.php:754
+msgid "Blog BTN On/Off"
+msgstr ""
+
+#: inc/kirki-backup.php:921 inc/kirki-customizer.php:810
+msgid "Blog Button Text"
+msgstr ""
+
+#: inc/kirki-backup.php:877 inc/kirki-customizer.php:766
+msgid "Blog Category Meta On/Off"
+msgstr ""
+
+#: inc/kirki-backup.php:909 inc/kirki-customizer.php:798
+msgid "Blog Comments Meta On/Off"
+msgstr ""
+
+#: inc/kirki-backup.php:898 inc/kirki-customizer.php:787
+msgid "Blog Date Meta On/Off"
+msgstr ""
+
+#: inc/kirki-backup.php:856 inc/kirki-customizer.php:745
+msgid "Blog Details Layout 2"
+msgstr ""
+
+#: inc/kirki-backup.php:846 inc/kirki-customizer.php:735
+msgid "Blog Section"
+msgstr ""
+
+#: inc/kirki-backup.php:847 inc/kirki-customizer.php:736
+msgid "Blog Section Settings."
+msgstr ""
+
+#: inc/common/diego-widgets.php:14
+msgid "Blog Sidebar"
+msgstr ""
+
+#: inc/kirki-customizer.php:44
+msgid "Body BG Color"
+msgstr ""
+
+#: inc/kirki-backup.php:544 inc/kirki-customizer.php:486
+msgid "Breadcrumb"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:1796
+msgctxt "breadcrumb"
+msgid "Home"
+msgstr ""
+
+#: inc/tp-metabox.php:115
+msgid "Breadcrumb Background"
+msgstr ""
+
+#: inc/kirki-backup.php:563 inc/tp-metabox.php:105 inc/kirki-customizer.php:506
+msgid "Breadcrumb BG Color"
+msgstr ""
+
+#: inc/kirki-backup.php:555 inc/kirki-customizer.php:497
+msgid "Breadcrumb Image"
+msgstr ""
+
+#: inc/kirki-backup.php:556 inc/kirki-customizer.php:498
+msgid "Breadcrumb Image add/remove"
+msgstr ""
+
+#: inc/kirki-backup.php:545 inc/kirki-customizer.php:487
+msgid "Breadcrumb Settings."
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:1653
+#: inc/woocommerce/tp-woocommerce.php:1826
+msgid "Buy Now"
+msgstr ""
+
+#: comments.php:125
+msgid "Cancel reply"
+msgstr ""
+
+#: inc/tp-metabox.php:64
+msgid "Change Body Background"
+msgstr ""
+
+#: inc/kirki-backup.php:131 inc/kirki-backup.php:722 inc/kirki-backup.php:784
+#: inc/kirki-customizer.php:32 inc/kirki-customizer.php:162
+#: inc/kirki-customizer.php:611 inc/kirki-customizer.php:673
+msgid "Choose an option"
+msgstr ""
+
+#: inc/kirki-backup.php:664 inc/kirki-backup.php:674 inc/kirki-backup.php:684
+#: inc/kirki-backup.php:694
+msgid "Choose Your Color"
+msgstr ""
+
+#: inc/kirki-backup.php:86 inc/kirki-customizer.php:125
+msgid "Chose Header Style"
+msgstr ""
+
+#: inc/kirki-backup.php:337 inc/kirki-customizer.php:329
+msgid "Chose Offcanvas Style"
+msgstr ""
+
+#: template-parts/offcanvas/offcanvas-1.php:50
+#: template-parts/offcanvas/offcanvas-1.php:72
+#: template-parts/offcanvas/new.php:19 template-parts/offcanvas/new.php:41
+msgid "close"
+msgstr ""
+
+#: comments.php:48
+msgid "Comment navigation"
+msgstr ""
+
+#: template-parts/blog/search-result-meta.php:46
+msgid "Comments ("
+msgstr ""
+
+#: inc/add_plugin.php:51
+msgid "Contact Form 7"
+msgstr ""
+
+#: inc/kirki-backup.php:395
+msgid "Contact Title"
+msgstr ""
+
+#: inc/kirki-backup.php:436 inc/kirki-customizer.php:418
+#: template-parts/offcanvas/offcanvas-1.php:25
+#: template-parts/offcanvas/offcanvas-2.php:25
+msgid "contact@diego.com"
+msgstr ""
+
+#: inc/common/diego-breadcrumb.php:37
+msgid "Course Details"
+msgstr ""
+
+#: inc/tp-metabox.php:144 inc/tp-metabox.php:192
+msgid "Custom"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:491
+#: inc/woocommerce/tp-woocommerce.php:692
+msgid "D"
+msgstr ""
+
+#: inc/tp-metabox.php:51
+msgid "Dark Mode"
+msgstr ""
+
+#: inc/tp-metabox.php:143 inc/tp-metabox.php:191
+msgid "Default"
+msgstr ""
+
+#. Name of the theme
+msgid "Diego"
+msgstr ""
+
+#. Description of the theme
+msgid "Diego - Creative Personal Portfolio &amp; Resume WordPress Theme"
+msgstr ""
+
+#: inc/add_plugin.php:34
+msgid "Diego Core "
+msgstr ""
+
+#: inc/kirki-customizer.php:8
+msgid "Diego Customizer"
+msgstr ""
+
+#: inc/kirki-customizer.php:9
+msgid "Diego Customizer Description."
+msgstr ""
+
+#: inc/template-helper.php:277 inc/template-helper.php:280
+#: inc/template-helper.php:305
+msgid "Diego Logo"
+msgstr ""
+
+#: inc/kirki-backup.php:20 inc/kirki-customizer.php:20
+msgid "Diego Theme Settings."
+msgstr ""
+
+#: inc/kirki-backup.php:35 inc/kirki-backup.php:49 inc/kirki-backup.php:78
+#: inc/kirki-backup.php:152 inc/kirki-backup.php:166 inc/kirki-backup.php:272
+#: inc/kirki-backup.php:312 inc/kirki-backup.php:387 inc/kirki-backup.php:742
+#: inc/kirki-customizer.php:60 inc/kirki-customizer.php:74
+#: inc/kirki-customizer.php:88 inc/kirki-customizer.php:117
+#: inc/kirki-customizer.php:183 inc/kirki-customizer.php:197
+#: inc/kirki-customizer.php:292 inc/kirki-customizer.php:378
+#: inc/kirki-customizer.php:631
+msgid "Disable"
+msgstr ""
+
+#: inc/tp-metabox.php:57
+msgid "Disable Scroll Effect ?"
+msgstr ""
+
+#: inc/add_plugin.php:133
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/template-helper.php:462
+msgid "Dribbble"
+msgstr ""
+
+#: inc/kirki-backup.php:495 inc/kirki-customizer.php:437
+msgid "Dribble URL"
+msgstr ""
+
+#: inc/tp-metabox.php:145 inc/tp-metabox.php:193
+msgid "Elementor"
+msgstr ""
+
+#: inc/kirki-backup.php:782 inc/kirki-customizer.php:671
+msgid "Elementor Footer Template"
+msgstr ""
+
+#: inc/kirki-backup.php:129 inc/kirki-customizer.php:160
+msgid "Elementor Header Template"
+msgstr ""
+
+#: inc/add_plugin.php:29
+msgid "Elementor Page Builder"
+msgstr ""
+
+#: inc/kirki-backup.php:34 inc/kirki-backup.php:48 inc/kirki-backup.php:77
+#: inc/kirki-backup.php:151 inc/kirki-backup.php:165 inc/kirki-backup.php:271
+#: inc/kirki-backup.php:311 inc/kirki-backup.php:386 inc/kirki-backup.php:741
+#: inc/kirki-customizer.php:59 inc/kirki-customizer.php:73
+#: inc/kirki-customizer.php:87 inc/kirki-customizer.php:116
+#: inc/kirki-customizer.php:182 inc/kirki-customizer.php:196
+#: inc/kirki-customizer.php:291 inc/kirki-customizer.php:377
+#: inc/kirki-customizer.php:630
+msgid "Enable"
+msgstr ""
+
+#: inc/tp-metabox.php:71
+msgid "Enable Distort Background ?"
+msgstr ""
+
+#: inc/tp-metabox.php:266
+msgid "Enable Second Style"
+msgstr ""
+
+#: inc/template-helper.php:125 inc/template-helper.php:152
+#: inc/template-helper.php:185 inc/template-helper.php:209
+#: inc/template-helper.php:240
+msgid "English"
+msgstr ""
+
+#: inc/kirki-backup.php:958
+msgid "Error Image"
+msgstr ""
+
+#: inc/kirki-backup.php:991 inc/kirki-customizer.php:870
+msgid "Error Link Text"
+msgstr ""
+
+#: inc/kirki-backup.php:486 template-parts/offcanvas/offcanvas-2.php:35
+msgid "Follow Us"
+msgstr ""
+
+#: inc/kirki-backup.php:709 inc/tp-metabox.php:186 inc/kirki-customizer.php:598
+msgid "Footer"
+msgstr ""
+
+#: inc/common/diego-widgets.php:28
+#, php-format
+msgid "Footer %1$s"
+msgstr ""
+
+#: inc/tp-metabox.php:207
+msgid "Footer 1"
+msgstr ""
+
+#: inc/kirki-backup.php:799 inc/kirki-customizer.php:688
+msgid "Footer BG Color"
+msgstr ""
+
+#: inc/kirki-backup.php:809 inc/kirki-backup.php:810
+#: inc/kirki-customizer.php:698 inc/kirki-customizer.php:699
+msgid "Footer BG Image"
+msgstr ""
+
+#: inc/tp-metabox.php:206
+msgid "Footer Blank"
+msgstr ""
+
+#: inc/common/diego-widgets.php:30
+#, php-format
+msgid "Footer column %1$s"
+msgstr ""
+
+#: inc/kirki-backup.php:830 inc/kirki-customizer.php:719
+msgid "Footer Copyright"
+msgstr ""
+
+#: inc/kirki-backup.php:737 inc/kirki-customizer.php:626
+msgid "Footer Custom/Elementor On/Off"
+msgstr ""
+
+#: inc/kirki-backup.php:736 inc/kirki-customizer.php:625
+msgid "Footer Custom/Elementor Switch"
+msgstr ""
+
+#: inc/kirki-backup.php:750 inc/kirki-customizer.php:639
+msgid "Footer Layout Control"
+msgstr ""
+
+#: inc/kirki-backup.php:710 inc/kirki-customizer.php:599
+msgid "Footer Settings."
+msgstr ""
+
+#: inc/kirki-backup.php:719 inc/kirki-customizer.php:608
+msgid "Footer Widget Number"
+msgstr ""
+
+#: template-parts/footer/footer-1.php:95
+msgid "footer-shape"
+msgstr ""
+
+#: inc/template-helper.php:154 inc/template-helper.php:211
+#: inc/template-helper.php:242
+msgid "French"
+msgstr ""
+
+#. If there are characters in your language that are not supported
+#. by chosen font(s), translate this to 'off'. Do not translate into your own language.
+#: inc/common/diego-scripts.php:87
+msgctxt "Google font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/tp-metabox.php:79
+msgid "Green Distort Background"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:492
+#: inc/woocommerce/tp-woocommerce.php:693
+msgid "H"
+msgstr ""
+
+#: inc/tp-metabox.php:138
+msgid "Header"
+msgstr ""
+
+#: inc/tp-metabox.php:158
+msgid "Header 1"
+msgstr ""
+
+#: inc/kirki-backup.php:185 inc/kirki-customizer.php:205
+msgid "Header Contact Text"
+msgstr ""
+
+#: inc/kirki-backup.php:194 inc/kirki-customizer.php:214
+msgid "Header Contact URL"
+msgstr ""
+
+#: inc/kirki-backup.php:73 inc/kirki-customizer.php:112
+msgid "Header Custom/Elementor On/Off"
+msgstr ""
+
+#: inc/kirki-backup.php:72 inc/kirki-customizer.php:111
+msgid "Header Custom/Elementor Switch"
+msgstr ""
+
+#: inc/kirki-backup.php:175
+msgid "Header CV Button"
+msgstr ""
+
+#: inc/kirki-backup.php:161 inc/kirki-customizer.php:192
+msgid "Header Hamburger On/Off"
+msgstr ""
+
+#: inc/kirki-backup.php:160 inc/kirki-customizer.php:191
+msgid "Header Hamburger Switch"
+msgstr ""
+
+#: inc/kirki-backup.php:211 inc/kirki-customizer.php:231
+msgid "Header Logo"
+msgstr ""
+
+#: inc/kirki-backup.php:231 inc/kirki-customizer.php:251
+msgid "Header Logo Black"
+msgstr ""
+
+#: inc/kirki-backup.php:212 inc/kirki-customizer.php:232
+msgid "Header Logo Settings."
+msgstr ""
+
+#: inc/kirki-backup.php:222 inc/kirki-customizer.php:242
+msgid "Header Logo White"
+msgstr ""
+
+#: inc/kirki-backup.php:62 inc/kirki-customizer.php:101
+msgid "Header Main Controls."
+msgstr ""
+
+#: inc/kirki-backup.php:61 inc/kirki-customizer.php:100
+msgid "Header Main Settings"
+msgstr ""
+
+#: inc/kirki-backup.php:147 inc/kirki-customizer.php:178
+msgid "Header Right On/Off"
+msgstr ""
+
+#: inc/kirki-backup.php:146 inc/kirki-customizer.php:177
+msgid "Header Right Switch"
+msgstr ""
+
+#: inc/kirki-backup.php:426 inc/kirki-customizer.php:408
+msgid "hello contact@diego.com"
+msgstr ""
+
+#: inc/kirki-backup.php:466 template-parts/offcanvas/offcanvas-2.php:31
+msgid "Hello There!"
+msgstr ""
+
+#: inc/class-navwalker.php:385
+msgid "Home"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:658
+#: inc/woocommerce/tp-woocommerce.php:663
+#: inc/woocommerce/tp-woocommerce.php:1264
+#: inc/woocommerce/tp-woocommerce.php:1531
+msgid "Hot"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://themeforest.net/user/theme_pure/"
+msgstr ""
+
+#. URI of the theme
+msgid "https://wp.aqlova.com/diego/"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:509
+msgid "Hurry! Only"
+msgstr ""
+
+#: inc/kirki-backup.php:476 inc/kirki-customizer.php:428
+#: template-parts/offcanvas/offcanvas-1.php:27
+msgid "If in doubt. reach out."
+msgstr ""
+
+#: inc/template-functions.php:76
+msgid "Image Alt Text"
+msgstr ""
+
+#: inc/kirki-backup.php:397 template-parts/offcanvas/offcanvas-2.php:34
+msgid "Information"
+msgstr ""
+
+#: inc/template-helper.php:468
+msgid "Instagram"
+msgstr ""
+
+#: inc/kirki-backup.php:505 inc/kirki-customizer.php:447
+msgid "Instagram URL"
+msgstr ""
+
+#: inc/add_plugin.php:78
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/add_plugin.php:77
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/add_plugin.php:79
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/tp-metabox.php:365
+msgid "Is Product On Hot?"
+msgstr ""
+
+#: inc/tp-metabox.php:359
+msgid "Is Product On Trending?"
+msgstr ""
+
+#: template-parts/content-none.php:43
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: inc/add_plugin.php:61
+msgid "Kirki Customizer Framework"
+msgstr ""
+
+#: inc/template-helper.php:181
+msgid "language"
+msgstr ""
+
+#: comments.php:123
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:124
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: template-parts/header/header-4.php:19 template-parts/header/header-5.php:19
+#: template-parts/header/header-7.php:19 template-parts/header/header-6.php:19
+#: template-parts/header/header-2.php:20 template-parts/header/header-3.php:20
+#: template-parts/header/header-1.php:22 template-parts/header/header-8.php:19
+#: template-parts/header/header-9.php:19
+msgid "Let's Talk"
+msgstr ""
+
+#: inc/kirki-backup.php:187 inc/kirki-customizer.php:207
+msgid "Lets Talk"
+msgstr ""
+
+#: inc/tp-metabox.php:52
+msgid "Light Mode"
+msgstr ""
+
+#: header.php:46 inc/kirki-backup.php:283 inc/kirki-customizer.php:303
+msgid "Loading"
+msgstr ""
+
+#: comments.php:118
+msgid "Log out of this account"
+msgstr ""
+
+#: comments.php:118
+msgid "Log out?"
+msgstr ""
+
+#: comments.php:113
+msgid "logged in"
+msgstr ""
+
+#: comments.php:118
+msgid "Logged in as"
+msgstr ""
+
+#: inc/template-helper.php:324 inc/template-helper.php:325
+#: inc/template-helper.php:344 inc/template-helper.php:348
+#: inc/template-helper.php:401 template-parts/offcanvas/offcanvas-1.php:44
+#: template-parts/offcanvas/offcanvas-1.php:45
+#: template-parts/offcanvas/offcanvas-2.php:51
+#: template-parts/offcanvas/offcanvas-2.php:52
+#: template-parts/offcanvas/new.php:13 template-parts/offcanvas/new.php:14
+msgid "logo"
+msgstr ""
+
+#: inc/tp-metabox.php:21
+msgid "Logo Black"
+msgstr ""
+
+#: inc/tp-metabox.php:29
+msgid "Logo White"
+msgstr ""
+
+#: inc/kirki-backup.php:242 inc/kirki-backup.php:371
+#: inc/kirki-customizer.php:262 inc/kirki-customizer.php:362
+msgid "Logo Width"
+msgstr ""
+
+#: template-parts/offcanvas/offcanvas-2.php:32
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:493
+#: inc/woocommerce/tp-woocommerce.php:694
+msgid "M"
+msgstr ""
+
+#: inc/kirki-customizer.php:69
+msgid "Magic Cursor On/Off"
+msgstr ""
+
+#: inc/kirki-customizer.php:68
+msgid "Magic Cursor Switch"
+msgstr ""
+
+#: inc/kirki-backup.php:44
+msgid "Magic Cussor On/Off"
+msgstr ""
+
+#: inc/kirki-backup.php:43
+msgid "Magic Cussor Switch"
+msgstr ""
+
+#: inc/kirki-customizer.php:406
+msgid "Mail Text"
+msgstr ""
+
+#: inc/kirki-backup.php:424 inc/kirki-backup.php:434
+#: inc/kirki-customizer.php:416
+msgid "Mail URL"
+msgstr ""
+
+#: functions.php:48
+msgid "Main Menu"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:352
+msgid "Menu"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:40
+msgid "More Products From Seller"
+msgstr ""
+
+#: comments.php:54
+msgid "Newer &rarr;"
+msgstr ""
+
+#: inc/add_plugin.php:130
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:87
+msgid "No product has been found!"
+msgstr ""
+
+#: inc/kirki-backup.php:980 inc/kirki-customizer.php:859
+msgid "Not Found description"
+msgstr ""
+
+#: inc/kirki-backup.php:969 inc/kirki-customizer.php:848
+msgid "Not Found Title"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: inc/tp-metabox.php:238
+msgid "Offcanvas 1"
+msgstr ""
+
+#: inc/kirki-backup.php:381 inc/kirki-customizer.php:372
+msgid "Offcanvas Content"
+msgstr ""
+
+#: inc/kirki-backup.php:382 inc/kirki-customizer.php:373
+msgid "Offcanvas Content On/Off"
+msgstr ""
+
+#: inc/kirki-backup.php:327 inc/kirki-customizer.php:319
+msgid "Offcanvas Info"
+msgstr ""
+
+#: inc/kirki-backup.php:328 inc/kirki-customizer.php:320
+msgid "Offcanvas Information."
+msgstr ""
+
+#: inc/kirki-backup.php:362 inc/kirki-customizer.php:353
+msgid "Offcanvas Logo Black"
+msgstr ""
+
+#: inc/kirki-backup.php:353 inc/kirki-backup.php:363
+#: inc/kirki-customizer.php:344 inc/kirki-customizer.php:354
+msgid "Offcanvas Logo Here"
+msgstr ""
+
+#: inc/kirki-backup.php:352 inc/kirki-customizer.php:343
+msgid "Offcanvas Logo White"
+msgstr ""
+
+#: inc/add_plugin.php:56
+msgid "One Click Demo Import"
+msgstr ""
+
+#: functions.php:49
+msgid "Onepage Main Menu"
+msgstr ""
+
+#: 404.php:13
+msgid "Oops! Page not found"
+msgstr ""
+
+#: inc/kirki-backup.php:574 inc/kirki-customizer.php:517
+msgid "Padding"
+msgstr ""
+
+#: inc/kirki-backup.php:573 inc/kirki-customizer.php:516
+msgid "Padding Control"
+msgstr ""
+
+#: template-parts/content-page.php:9
+msgid "Page"
+msgstr ""
+
+#: inc/common/diego-breadcrumb.php:43
+msgid "Page not Found"
+msgstr ""
+
+#. Name of the template
+msgid "Page Sidebar"
+msgstr ""
+
+#: template-parts/content-page.php:5 template-parts/content.php:25
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/footer/footer-3.php:123
+#: template-parts/footer/footer-2.php:125
+#: template-parts/footer/footer-6.php:123
+#: template-parts/footer/footer-5.php:123
+#: template-parts/footer/footer-4.php:124
+msgid "payment"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:146
+msgid "payment-img"
+msgstr ""
+
+#: inc/kirki-backup.php:405 inc/kirki-customizer.php:387
+msgid "Phone Text"
+msgstr ""
+
+#: inc/kirki-backup.php:414 inc/kirki-customizer.php:396
+msgid "Phone URL"
+msgstr ""
+
+#: inc/tp-metabox.php:320
+msgid "Place your audio url.."
+msgstr ""
+
+#: inc/tp-metabox.php:301 inc/tp-metabox.php:356
+msgid "Place your video url."
+msgstr ""
+
+#: header.php:132
+msgid "Play"
+msgstr ""
+
+#: inc/add_plugin.php:135
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/add_plugin.php:128
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/add_plugin.php:131
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: inc/kirki-customizer.php:904
+msgid "Portfolio Slug"
+msgstr ""
+
+#: comments.php:109 comments.php:126
+msgid "Post Comment"
+msgstr ""
+
+#: inc/template-functions.php:38
+msgid "Post Tags : "
+msgstr ""
+
+#: inc/kirki-backup.php:257 inc/kirki-customizer.php:277
+msgid "Preloader Controls."
+msgstr ""
+
+#: inc/kirki-backup.php:281 inc/kirki-customizer.php:301
+msgid "Preloader Loading Text"
+msgstr ""
+
+#: inc/kirki-backup.php:267 inc/kirki-backup.php:307
+#: inc/kirki-customizer.php:287
+msgid "Preloader On/Off"
+msgstr ""
+
+#: inc/kirki-backup.php:256 inc/kirki-customizer.php:276
+msgid "Preloader Settings"
+msgstr ""
+
+#: inc/kirki-backup.php:266 inc/kirki-backup.php:306
+#: inc/kirki-customizer.php:286
+msgid "Preloader Switch"
+msgstr ""
+
+#: inc/kirki-backup.php:663
+msgid "Primary Color"
+msgstr ""
+
+#: inc/tp-metabox.php:391
+msgid "Product Main Thumbnail"
+msgstr ""
+
+#: inc/tp-metabox.php:328
+msgid "Product Single Features"
+msgstr ""
+
+#: inc/tp-metabox.php:335
+msgid "Product Single Layout"
+msgstr ""
+
+#: inc/add_plugin.php:41
+msgid "Pure Metafields"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:1345
+msgid "Quick View"
+msgstr ""
+
+#. 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/add_plugin.php:127
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/kirki-backup.php:959
+msgid "rror Image Here"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:494
+#: inc/woocommerce/tp-woocommerce.php:695
+msgid "S"
+msgstr ""
+
+#: single.php:93
+msgid "Scroll"
+msgstr ""
+
+#: inc/kirki-backup.php:30 inc/kirki-customizer.php:55
+msgid "Scroll Effect On/Off"
+msgstr ""
+
+#: inc/kirki-backup.php:29 inc/kirki-customizer.php:54
+msgid "Scroll Effect Switch"
+msgstr ""
+
+#: functions.php:312 inc/woocommerce/tp-woocommerce.php:316
+msgid "Search"
+msgstr ""
+
+#: inc/common/diego-breadcrumb.php:40
+msgid "Search Results for : "
+msgstr ""
+
+#: search.php:25
+msgid "Search Results For:"
+msgstr ""
+
+#: inc/kirki-backup.php:673
+msgid "Secondary Color"
+msgstr ""
+
+#: inc/tp-metabox.php:209
+msgid "Select a footer"
+msgstr ""
+
+#: inc/tp-metabox.php:160
+msgid "Select a header"
+msgstr ""
+
+#: inc/tp-metabox.php:240
+msgid "Select a offcanvas"
+msgstr ""
+
+#: inc/tp-metabox.php:174 inc/tp-metabox.php:223
+msgid "Select a template"
+msgstr ""
+
+#: inc/kirki-customizer.php:29
+msgid "Select Default Theme Mode"
+msgstr ""
+
+#: inc/tp-metabox.php:273
+msgid "Select Details Layout"
+msgstr ""
+
+#: inc/tp-metabox.php:202
+msgid "Select Footer Style"
+msgstr ""
+
+#: inc/tp-metabox.php:220
+msgid "Select Footer Template"
+msgstr ""
+
+#: inc/tp-metabox.php:154
+msgid "Select Header Style"
+msgstr ""
+
+#: inc/tp-metabox.php:171
+msgid "Select Header Template"
+msgstr ""
+
+#: inc/tp-metabox.php:237
+msgid "Select Offcanvas"
+msgstr ""
+
+#: inc/tp-metabox.php:233
+msgid "Select Offcanvas Style"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:1651
+msgid "Select Options"
+msgstr ""
+
+#: inc/tp-metabox.php:43 inc/tp-metabox.php:47 inc/tp-metabox.php:50
+msgid "Select Theme Mode"
+msgstr ""
+
+#: inc/kirki-customizer.php:894
+msgid "Services Slug"
+msgstr ""
+
+#: inc/common/diego-widgets.php:16
+msgid "Set Your Blog Widget"
+msgstr ""
+
+#: inc/kirki-backup.php:819 inc/kirki-customizer.php:708
+msgid "Shape On/Off"
+msgstr ""
+
+#: inc/kirki-backup.php:8
+msgid "Shofy Customizer"
+msgstr ""
+
+#: inc/kirki-backup.php:9
+msgid "Shofy Customizer Description."
+msgstr ""
+
+#: inc/common/diego-breadcrumb.php:34
+msgid "Shop"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:273
+msgid "Shopping cart"
+msgstr ""
+
+#: inc/kirki-backup.php:474 inc/kirki-customizer.php:426
+msgid "Short Desc"
+msgstr ""
+
+#: inc/tp-metabox.php:95
+msgid "Show Breadcrumb Image?"
+msgstr ""
+
+#: inc/tp-metabox.php:88
+msgid "Show Breadcrumb?"
+msgstr ""
+
+#: inc/kirki-backup.php:931 inc/kirki-customizer.php:820
+msgid "Single Blog Social Share"
+msgstr ""
+
+#: inc/kirki-customizer.php:884
+msgid "Slug Settings"
+msgstr ""
+
+#: inc/kirki-customizer.php:885
+msgid "Slug Settings."
+msgstr ""
+
+#: inc/kirki-backup.php:484
+msgid "Social Title"
+msgstr ""
+
+#: inc/add_plugin.php:81
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/template-helper.php:153 inc/template-helper.php:210
+#: inc/template-helper.php:241
+msgid "Spanish"
+msgstr ""
+
+#: header.php:133
+msgid "Stop"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:307
+msgid "Store"
+msgstr ""
+
+#: inc/kirki-backup.php:416 inc/kirki-customizer.php:398
+msgid "tel:61404093 54"
+msgstr ""
+
+#: inc/add_plugin.php:92
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:129
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: inc/add_plugin.php:107
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:102
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/kirki-backup.php:586 inc/kirki-backup.php:626
+#: inc/kirki-customizer.php:529 inc/kirki-customizer.php:569
+msgid "The full set of options."
+msgstr ""
+
+#: inc/kirki-backup.php:232 inc/kirki-customizer.php:252
+msgid "Theme Black Logo Here"
+msgstr ""
+
+#: inc/kirki-backup.php:683
+msgid "Theme Brown Color"
+msgstr ""
+
+#: inc/kirki-backup.php:654
+msgid "Theme Color Settings."
+msgstr ""
+
+#: inc/kirki-backup.php:653
+msgid "Theme Colors"
+msgstr ""
+
+#: inc/kirki-backup.php:693
+msgid "Theme Green Color"
+msgstr ""
+
+#: inc/kirki-backup.php:19 inc/kirki-customizer.php:19
+msgid "Theme Settings"
+msgstr ""
+
+#: inc/kirki-backup.php:223 inc/kirki-customizer.php:243
+msgid "Theme White Logo Here"
+msgstr ""
+
+#. Author of the theme
+msgid "Theme_Pure"
+msgstr ""
+
+#: inc/add_plugin.php:134
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/add_plugin.php:97
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:87
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:82
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:113
+msgid "to post a comment."
+msgstr ""
+
+#: inc/tp-metabox.php:309
+msgid "TP Audio Post"
+msgstr ""
+
+#: inc/tp-metabox.php:248
+msgid "TP Gallery Post"
+msgstr ""
+
+#: inc/tp-metabox.php:12
+msgid "TP Page Info"
+msgstr ""
+
+#: inc/tp-metabox.php:290
+msgid "TP Video Post"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:608
+#: inc/woocommerce/tp-woocommerce.php:615
+#: inc/woocommerce/tp-woocommerce.php:625
+#: inc/woocommerce/tp-woocommerce.php:635
+#: inc/woocommerce/tp-woocommerce.php:645
+#: inc/woocommerce/tp-woocommerce.php:1258
+#: inc/woocommerce/tp-woocommerce.php:1525
+msgid "Trending"
+msgstr ""
+
+#: inc/kirki-backup.php:615 inc/kirki-customizer.php:558
+msgid "Typography"
+msgstr ""
+
+#: inc/kirki-backup.php:585 inc/kirki-backup.php:625
+#: inc/kirki-customizer.php:528 inc/kirki-customizer.php:568
+msgid "Typography Control"
+msgstr ""
+
+#: inc/kirki-backup.php:616 inc/kirki-customizer.php:559
+msgid "Typography Settings."
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:509
+msgid "units left in stock!"
+msgstr ""
+
+#: inc/add_plugin.php:80
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/tp-metabox.php:296 inc/tp-metabox.php:351
+msgid "Video"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:1464
+msgid "View Compare"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:1655
+msgid "View Products"
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:1401
+msgid "View Wishlist"
+msgstr ""
+
+#: inc/kirki-backup.php:464
+msgid "Welcome Title"
+msgstr ""
+
+#: 404.php:15
+msgid ""
+"Whoops, this is embarassing. Looks like the page you were looking for was "
+"not found."
+msgstr ""
+
+#: inc/woocommerce/tp-woocommerce.php:332
+msgid "Wishlist"
+msgstr ""
+
+#: inc/add_plugin.php:46
+msgid "WP Classic Editor"
+msgstr ""
+
+#: inc/kirki-customizer.php:45
+msgid "You can change body bg color from here."
+msgstr ""
+
+#: inc/kirki-backup.php:564 inc/kirki-customizer.php:507
+msgid "You can change breadcrumb bg color from here."
+msgstr ""
+
+#: inc/kirki-backup.php:800 inc/kirki-customizer.php:689
+msgid "You can change footer bg color from here."
+msgstr ""
+
+#: comments.php:113
+msgid "You must be"
+msgstr ""
+
+#: comments.php:104
+msgid "Your Comment"
+msgstr ""
+
+#: comments.php:89
+msgid "Your Email"
+msgstr ""
+
+#: comments.php:84
+msgid "Your Name"
+msgstr ""
+
+#: comments.php:91
+msgid "Your Website"
+msgstr ""
+
+#: inc/template-helper.php:480
+msgid "Youtube"
+msgstr ""
+
+#: inc/kirki-backup.php:526 inc/kirki-customizer.php:468
+msgid "Youtube URL"
+msgstr ""
+
+#: inc/kirki-backup.php:832
+msgid "© 2023 All Rights Reserved | WordPress Theme by Themepure"
+msgstr ""
+
+#: inc/template-helper.php:735 inc/kirki-customizer.php:721
+msgid "© 2024 All Rights Reserved | WordPress Theme by Themepure"
+msgstr ""

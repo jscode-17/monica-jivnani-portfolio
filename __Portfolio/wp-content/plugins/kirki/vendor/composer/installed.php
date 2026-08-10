@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'kirki/free',
+        'pretty_version' => '5.0.0',
+        'version' => '5.0.0.0',
+        'reference' => null,
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => false,
+    ),
+    'versions' => array(
+        'enshrined/svg-sanitize' => array(
+            'pretty_version' => '0.22.0',
+            'version' => '0.22.0.0',
+            'reference' => '0afa95ea74be155a7bcd6c6fb60c276c39984500',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../enshrined/svg-sanitize',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'kirki/free' => array(
+            'pretty_version' => '5.0.0',
+            'version' => '5.0.0.0',
+            'reference' => null,
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'themeum/framework' => array(
+            'pretty_version' => '1.0.17',
+            'version' => '1.0.17.0',
+            'reference' => 'b123fcea10961121ca5fa81ed2d937d00a0bdc46',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../themeum/framework',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

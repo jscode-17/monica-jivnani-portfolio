@@ -1,0 +1,44 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.12 Error css
+/*----------------------------------------*/
+
+.#{$theme-prifix}-error{
+    &-code{
+        font-size: 120px;
+        color: var(--tp-common-white);
+    }
+    &-title{
+        font-size: 60px;
+        color: var(--tp-common-white);
+
+        @media #{$xl}{
+            font-size: 50px;
+        }
+        @media #{$sm}{
+            font-size: 45px;
+        }
+        @media #{$xs}{
+            font-size: 40px;
+        }
+    }
+    &-content{
+        p{
+            color: rgba($color: $white, $alpha: .7);
+            margin-bottom: 50px;
+        }
+    }
+
+    &-btn{
+        height: 56px;
+        line-height: 54px;
+        border: 1px solid var(--tp-common-white);
+        &:hover{
+            background-color: transparent;
+            border-color: rgba($color: $white, $alpha: .3);
+            color: var(--tp-common-white);
+        }
+    }
+
+}

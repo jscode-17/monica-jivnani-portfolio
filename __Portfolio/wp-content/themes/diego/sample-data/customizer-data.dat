@@ -1,0 +1,11 @@
+a:4:{s:8:"template";s:5:"diego";s:4:"mods";a:21:{i:0;b:0;s:18:"custom_css_post_id";i:544;s:19:"header_right_switch";b:1;s:22:"diego_header_hamburger";b:1;s:20:"smooth_scroll_switch";b:1;s:14:"diego_blog_cat";b:1;s:19:"blog_details_layout";b:0;s:24:"diego_blog_single_social";b:1;s:18:"nav_menu_locations";a:2:{s:9:"main-menu";i:15;s:17:"onepage-main-menu";i:17;}s:29:"diego_header_elementor_switch";b:0;s:29:"diego_footer_elementor_switch";b:0;s:22:"diego_footer_templates";s:3:"372";s:23:"diego_offcanvas_content";b:1;s:26:"diego_offcanvas_short_desc";s:57:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, ";s:28:"diego_offcanvas_social_title";s:9:"Follow Us";s:22:"diego_preloader_switch";b:1;s:15:"diego_backtotop";b:1;s:27:"diego_awesome_cursor_switch";b:1;s:18:"diego_footer_shape";b:1;s:17:"diego_blog_author";b:1;s:29:"blog_details_thumbnail_layout";b:1;}s:7:"options";a:2:{s:9:"site_icon";s:4:"1710";s:23:"nav_menus_created_posts";a:0:{}}s:6:"wp_css";s:154:".single-portfolio .blog-standard__area{
+	display:none
+}
+
+.single-services .blog-standard__area{
+	display:none
+}
+
+.tp-footer-4__logo img {
+	width: 114px;
+}";}
