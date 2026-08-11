@@ -8,7 +8,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Monica Jivnani | Entrepreneur & Tech Founder</title>
-    <meta name="description" content="Founder of MaMo TechnoLabs LLP, a CMMI Level 3 global IT company. 15+ years in tech, 20+ international clients & published author of 3 books.">
+    <meta name="description"
+        content="Founder of MaMo TechnoLabs LLP, a CMMI Level 3 global IT company. 15+ years in tech, 20+ international clients & published author of 3 books.">
     <link rel="canonical" href="https://monicajivnani.online/">
 
     <script>
@@ -20,9 +21,9 @@
     ================================================== -->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        .grid-list-items__text p { text-align: justify; hyphens: auto; }
-    </style>
+    <link rel="stylesheet" href="css/enhance.css">
+    <link rel="stylesheet" href="css/about.css">
+   
 
     <!-- favicons
     ================================================== -->
@@ -30,7 +31,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@500;600;700&display=swap"
         rel="stylesheet">
 
 
@@ -70,6 +72,7 @@
                     <div class="s-header__logo">
                         <a class="logo text-logo" href="index.html">
                             Monica
+
                         </a>
                     </div>
 
@@ -80,22 +83,34 @@
                 </div>
                 <!-- end s-header__block -->
 
-                <nav class="s-header__nav">
-
-                    <ul class="s-header__menu-links">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="books.html">Books</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-
-                    <div class="s-header__contact">
-                        <button type="button" class="btn btn--primary s-header__contact-btn" id="openContactModal">
-                            Connect With Me!
-                        </button>
-                    </div>
-
-                </nav>
+            <nav class="s-header__nav">
+            
+                <ul class="s-header__menu-links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="books.html">Books</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            
+                <div class="s-header__contact">
+                    <button type="button" class="btn btn--primary s-header__contact-btn" id="openContactModal">
+                        Connect With Me!
+                        <span class="nav-arrow">↗</span>
+                    </button>
+                </div>
+            
+            </nav>
                 <!-- end s-header__nav -->
 
             </div>
@@ -115,6 +130,8 @@
             ----------------------------------------------- -->
             <section id="intro" class="s-intro">
 
+                <div class="ce-glow" id="ceGlow"></div>
+
                 <div class="row s-intro__content width-sixteen-col">
 
                     <div class="column lg-12 s-intro__content-inner grid-block">
@@ -122,17 +139,38 @@
                         <div class="s-intro__content-text">
                             <div class="s-intro__content-pretitle text-pretitle">Hello, I'm Monica Jivnani</div>
                             <h2 class="s-intro__content-title">Award-Winning First-Generation Entrepreneur, Founder of
-                                MaMo TechnoLabs LLP & <i>Author.</i></h2>
+                                MaMo TechnoLabs LLP.</h2>
+                            <h2 class="s-intro__content-title ce-role-line">Currently building as
+                                <span class="ce-rotator"><span class="ce-rotator-list">
+                                        <span>an Author.</span>
+                                        <span>a Speaker.</span>
+                                        <span>a Mentor.</span>
+                                    </span></span>
+                            </h2>
+
+                            <p class="ce-desc">Two decades building products and people — now writing,
+                                speaking, and mentoring the next generation of first-time founders.</p>
+
+                            <div class="ce-hero-actions">
+                                <button type="button" class="ce-hero-btn ce-hero-btn--primary" id="heroContactBtn">
+                                    Get in Touch <span class="ce-arrow">→</span>
+                                </button>
+                            </div>
 
                         </div>
                         <!-- s-intro__content-text -->
 
                         <div class="s-intro__content-media">
+                            <div class="ce-frame-outline"></div>
                             <div class="s-intro__content-media-inner">
                                 <img src="images/intro-bg.jpg"
                                     srcset="images/intro-bg.jpg 1x, images/intro-bg@2x.jpg 2x" alt="">
                                 <div class="lines">
                                     <span></span>
+                                </div>
+                                <div class="ce-badge">
+                                    <span class="ce-badge-num">12+</span>
+                                    <span class="ce-badge-label">Years founding &amp; scaling tech ventures</span>
                                 </div>
                             </div>
                         </div>
@@ -163,69 +201,256 @@
             </section>
             <!-- end s-intro -->
 
+            <div class="ce-facts">
+                <div class="ce-marquee-track">
+                    <span class="ce-fact">Author of 3 books</span>
+                    <span class="ce-fact">Founder, MaMo TechnoLabs LLP</span>
+                    <span class="ce-fact">CMMI Level 3 Company</span>
+                    <span class="ce-fact">20+ International Clients</span>
+                    <span class="ce-fact">Author of 3 books</span>
+                    <span class="ce-fact">Founder, MaMo TechnoLabs LLP</span>
+                    <span class="ce-fact">CMMI Level 3 Company</span>
+                    <span class="ce-fact">20+ International Clients</span>
+                </div>
+            </div>
+
             <!-- about
             ----------------------------------------------- -->
-            <section id="about" class="s-about target-section">
+            <!-- ABOUT
+================================================== -->
+            <section id="about" class="s-about target-section about-redesign">
 
-                <div class="row s-about__content width-sixteen-col">
-                    <div class="column grid-block grid-section-split">
+                <div class="about-redesign__container">
 
-                        <img src="images/geometric_shape.svg" alt="" class="s-about__content-imgbg">
+                    <!-- LEFT SIDE -->
+                    <div class="about-redesign__intro">
 
-                        <div class="section-header grid-section-split__header">
-                            <div class="text-pretitle">About</div>
-                            <h2 class="text-display-title">
-                                Founder. Builder. Author.
-                            </h2>
+                        <div class="about-redesign__label">
+                            <span>About</span>
+                            <i></i>
                         </div>
-                        <!-- end section-header -->
 
-                        <div class="s-about__content-main grid-section-split__primary">
-                            <p class="attention-getter">
-                                I'm Monica Jivnani, a first-generation entrepreneur who started from nothing and built
-                                MaMo TechnoLabs LLP, a CMMI Level 3 global IT company, from the ground up in 2014. What
-                                began as a quiet interest in technology turned into 15 years of hands-on experience
-                                across software development, product strategy, international account management, and
+                        <h2 class="about-redesign__title">
+                            Founder. Builder.<br>
+                            <em>Author.</em>
+                        </h2>
+
+                        <div class="about-redesign__line"></div>
+
+                        <div class="about-redesign__description">
+
+                            <p>
+                                I'm Monica Jivnani, a first-generation entrepreneur who
+                                started from nothing and built MaMo TechnoLabs LLP, a
+                                CMMI Level 3 global IT company, from the ground up in 2014.
+                                What began as a quiet interest in technology turned into
+                                15 years of hands-on experience across software development,
+                                product strategy, international account management, and
                                 business leadership.
                             </p>
 
-                            <p class="attention-getter">
-                                Today I work with clients across 25+ countries, independently managing 20+ international
-                                accounts every year. I specialize in turning complex business problems into working
-                                digital solutions on time, within scope, and built to last. I'm also a published author
-                                of three books, a public speaker, and someone who genuinely enjoys the problem-solving
+                            <p>
+                                Today I work with clients across 25+ countries,
+                                independently managing 20+ international accounts every
+                                year. I specialize in turning complex business problems
+                                into working digital solutions on time, within scope,
+                                and built to last.
+                            </p>
+
+                            <p>
+                                I'm also a published author of three books, a public
+                                speaker, and someone who genuinely enjoys the problem-solving
                                 side of both technology and storytelling.
                             </p>
+
                         </div>
-                        <!-- end s-about__content-main -->
 
-                        <div class="s-about__content-btn grid-section-split__bottom">
-                            <a href="about.html" class="btn btn--stroke u-fullwidth">More About Me →</a>
+                        <div class="about-redesign__actions">
 
-                            <ul class="s-about__social social-list">
+                            <a href="about.html" class="about-redesign__button">
+                                More About Me <span>→</span>
+                            </a>
+                            <div class="monica-linkedin-wrap">
 
-                                <li>
-                                    <a href="https://www.linkedin.com/in/monikaben" target="_blank" rel="noopener">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);">
-                                            <path
-                                                d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8h4.56v14H.22V8zM7.91 8h4.37v1.91h.06c.61-1.15 2.1-2.37 4.33-2.37 4.63 0 5.49 3.05 5.49 7.02V22h-4.56v-6.29c0-1.5-.03-3.43-2.09-3.43-2.09 0-2.41 1.63-2.41 3.32V22H7.91V8z" />
-                                        </svg>
-                                        <span class="u-screen-reader-text">LinkedIn</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <!-- end s-footer__social -->
+                                <a href="https://www.linkedin.com/in/monikaben" class="monica-linkedin" target="_blank"
+                                    rel="noopener">
+
+                                    <span class="monica-linkedin-icon">in</span>
+
+                                    <span class="monica-linkedin-follow">Follow me on</span>
+
+                                    <strong>LinkedIn</strong>
+
+                                    <span class="monica-linkedin-arrow">↗</span>
+
+                                </a>
+
+                            </div>
+
+
                         </div>
-                        <!-- end s-about__content-btn -->
 
                     </div>
-                    <!-- content-inner -->
+
+
+                    <!-- RIGHT SIDE : STATS -->
+                    <div class="about-redesign__stats">
+
+                        <div class="about-stat-card">
+
+                            <div class="about-stat-icon">
+                                <svg viewBox="0 0 64 64">
+                                    <circle cx="32" cy="32" r="22" />
+                                    <ellipse cx="32" cy="32" rx="10" ry="22" />
+                                    <path d="M10 32h44" />
+                                    <path d="M14 20h36" />
+                                    <path d="M14 44h36" />
+                                </svg>
+                            </div>
+
+                            <div class="about-stat-divider"></div>
+
+                            <div class="about-stat-content">
+                                <strong>25+</strong>
+                                <span>Countries Served</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="about-stat-card">
+
+                            <div class="about-stat-icon">
+                                <svg viewBox="0 0 64 64">
+                                    <rect x="10" y="20" width="44" height="32" rx="4" />
+                                    <path d="M23 20v-6h18v6" />
+                                    <path d="M10 32h44" />
+                                    <path d="M27 32v5h10v-5" />
+                                </svg>
+                            </div>
+
+                            <div class="about-stat-divider"></div>
+
+                            <div class="about-stat-content">
+                                <strong>20+</strong>
+                                <span>
+                                    International Accounts<br>
+                                    Managed Yearly
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="about-stat-card">
+
+                            <div class="about-stat-icon">
+                                <svg viewBox="0 0 64 64">
+                                    <path
+                                        d="M32 8l7.4 15 16.6 2.4-12 11.7 2.8 16.5L32 45.8 17.2 53.6 20 37.1 8 25.4 24.6 23z" />
+                                </svg>
+                            </div>
+
+                            <div class="about-stat-divider"></div>
+
+                            <div class="about-stat-content">
+                                <strong>15+</strong>
+                                <span>
+                                    Years of Industry<br>
+                                    Experience
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="about-stat-card">
+
+                            <div class="about-stat-icon">
+                                <svg viewBox="0 0 64 64">
+                                    <path d="M8 14c8-3 16-1 24 4v36c-8-5-16-7-24-4z" />
+                                    <path d="M56 14c-8-3-16-1-24 4v36c8-5 16-7 24-4z" />
+                                    <path d="M32 18v36" />
+                                </svg>
+                            </div>
+
+                            <div class="about-stat-divider"></div>
+
+                            <div class="about-stat-content">
+                                <strong>3</strong>
+                                <span>Books Published</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- WHAT DRIVES ME -->
+                <div class="about-drives">
+
+                    <div class="about-drives__divider">
+                        <span>♡</span>
+                    </div>
+
+                    <h3>WHAT DRIVES ME</h3>
+
+                    <div class="about-drives__grid">
+
+                        <article class="about-drive-card">
+
+                            <div class="about-drive-icon">
+                                💡
+                            </div>
+
+                            <h4>Solve Real Problems</h4>
+
+                            <p>
+                                I turn ideas into practical solutions that create real
+                                business impact.
+                            </p>
+
+                        </article>
+
+
+                        <article class="about-drive-card">
+
+                            <div class="about-drive-icon">
+                                ♧
+                            </div>
+
+                            <h4>Build &amp; Empower People</h4>
+
+                            <p>
+                                I believe in mentoring, empowering and building future
+                                leaders.
+                            </p>
+
+                        </article>
+
+
+                        <article class="about-drive-card">
+
+                            <div class="about-drive-icon">
+                                🚀
+                            </div>
+
+                            <h4>Create Lasting Impact</h4>
+
+                            <p>
+                                I focus on long-term value, innovation and sustainable
+                                growth.
+                            </p>
+
+                        </article>
+
+                    </div>
+
                 </div>
 
             </section>
-            <!-- end s-about -->
-
             <!-- expertise
             ----------------------------------------------- -->
             <section id="expertise" class="s-expertise">
@@ -337,7 +562,8 @@
                 <div class="row s-clients__content-block width-sixteen-col">
                     <div class="column xl-12 grid-block grid-section-split">
 
-                        <div class="section-header grid-section-split__header" style="max-width: 750px; grid-column: 1 / -1;">
+                        <div class="section-header grid-section-split__header"
+                            style="max-width: 750px; grid-column: 1 / -1;">
                             <div class="text-pretitle">Clients</div>
                             <h2 class="text-display-title" style="width: 100%; max-width: 100%;">
                                 I've had the privilege of working with some brands.
@@ -676,7 +902,7 @@
                         <li>
                             <span>📧</span> monica@mamotechnolabs.com
                         </li>
-                        
+
                     </ul>
                 </div>
 
@@ -686,6 +912,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="js/contact-modal.js"></script>
+    <script src="js/enhance.js"></script>
     <!--<script>
         // Select the form elements (Update IDs if yours are different)
         const sendButton = document.querySelector('button'); // Or give your button an ID like #sendBtn
@@ -729,4 +956,4 @@
 
 </body>
 
-</html>
+</html> 
