@@ -22,70 +22,489 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        .books-grid {
+        :root {
+            --g: #f0a018;
+            --dark: #070a08;
+            --cream: #f7f1e5;
+            --ink: #111713;
+            --muted: #686d67
+        }
+
+        .books-ai-page {
+            background: var(--cream);
+            overflow: hidden
+        }
+
+        .books-ai-hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            background: radial-gradient(circle at 72% 45%, rgba(240, 160, 24, .22), transparent 27%), linear-gradient(115deg, #050806, #11140f);
+            color: #fff;
+            position: relative
+        }
+
+        .books-ai-hero__inner {
+            width: min(1180px, 90%);
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            padding: 90px 0
+        }
+
+        .books-ai-kicker {
+            color: var(--g);
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            margin-bottom: 22px
+        }
+
+        .books-ai-title {
+            margin: 0;
+            font-family: "Playfair Display", Georgia, serif;
+            font-size: clamp(4.5rem, 7vw, 7.2rem);
+            line-height: .91;
+            letter-spacing: -.055em;
+            color: #fff
+        }
+
+        .books-ai-title em,
+        .books-ai-newsletter h2 em {
+            color: var(--g);
+            font-style: italic
+        }
+
+        .books-ai-copy {
+            max-width: 540px;
+            margin: 28px 0 32px;
+            color: #bbb;
+            font-size: 18px;
+            line-height: 1.65
+        }
+
+        .books-ai-actions {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            flex-wrap: wrap
+        }
+
+        .books-ai-btn {
+            display: inline-flex;
+            gap: 14px;
+            padding: 15px 22px;
+            border-radius: 12px;
+            background: var(--g);
+            color: #111;
+            font-weight: 700;
+            text-decoration: none;
+            transition: .35s
+        }
+
+        .books-ai-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 35px rgba(240, 160, 24, .28)
+        }
+
+        .books-ai-trailer {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        .books-ai-play {
+            width: 42px;
+            height: 42px;
+            display: grid;
+            place-items: center;
+            border: 1px solid var(--g);
+            border-radius: 50%;
+            color: var(--g)
+        }
+
+        .books-ai-stage {
+            min-height: 480px;
+            position: relative;
+            display: grid;
+            place-items: center
+        }
+
+        .books-ai-arch {
+            width: 420px;
+            height: 470px;
+            border: 7px solid var(--g);
+            border-bottom: 0;
+            border-radius: 220px 220px 0 0;
+            position: absolute;
+            bottom: 0;
+            box-shadow: 0 0 45px rgba(240, 160, 24, .42)
+        }
+
+        .books-ai-books {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: flex-end;
+            gap: 10px;
+            filter: drop-shadow(0 25px 30px #000)
+        }
+
+        .books-ai-book {
+            width: 105px;
+            height: 350px;
+            border-radius: 5px;
+            background: linear-gradient(90deg, #241308, #7e4a16 45%, #241207);
+            border: 1px solid #b87522;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .books-ai-book:nth-child(2) {
+            height: 390px;
+            background: linear-gradient(90deg, #271306, #9a5b17 48%, #211007)
+        }
+
+        .books-ai-book:nth-child(3) {
+            height: 325px;
+            background: linear-gradient(90deg, #071713, #214e43 48%, #07120f)
+        }
+
+        .books-ai-book span {
+            color: #f7c56b;
+            font-family: Georgia, serif;
+            font-size: 19px;
+            letter-spacing: .13em;
+            writing-mode: vertical-rl;
+            text-transform: uppercase
+        }
+
+        .books-ai-quote {
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            max-width: 190px;
+            color: #fff;
+            font: italic 19px/1.45 Georgia, serif
+        }
+
+        .books-ai-quote strong {
+            display: block;
+            margin-top: 14px;
+            color: var(--g);
+            font-size: 13px
+        }
+
+        .books-ai-featured {
+            padding: 90px 0 70px;
+            background: var(--cream)
+        }
+
+        .books-ai-wrap {
+            width: min(1180px, 90%);
+            margin: auto
+        }
+
+        .books-ai-section-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-bottom: 35px
+        }
+
+        .books-ai-section-head h2 {
+            margin: 0;
+            color: var(--ink);
+            font: 4.5rem/1 "Playfair Display", Georgia, serif
+        }
+
+        .books-ai-section-head h2 span {
+            color: var(--g);
+            font-style: italic
+        }
+
+        .books-ai-section-link {
+            color: #111;
+            text-decoration: none;
+            font-weight: 600
+        }
+
+        .books-ai-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 3rem;
-            padding: 3rem 6rem 5rem;
+            gap: 22px
         }
-        .book-card {
+
+        .books-ai-card {
+            background: #fff;
+            border: 1px solid #e4ddd1;
+            border-radius: 18px;
+            padding: 14px;
             display: flex;
             flex-direction: column;
-            background: #fff;
-            border-radius: 4px;
+            min-height: 600px;
+            box-shadow: 0 10px 35px #1a19120f;
+            transition: .45s
+        }
+
+        .books-ai-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 55px #1a191225;
+            border-color: #f0a018
+        }
+
+        .books-ai-card__cover {
+            position: relative;
+            height: 390px;
             overflow: hidden;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            border-radius: 12px;
+            background: #eee7db
         }
-        .book-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 12px 36px rgba(0,0,0,0.15);
-        }
-        .book-card__cover {
-            width: 100%;
-            aspect-ratio: 2/3;
-            overflow: hidden;
-            background: #f0ede8;
-        }
-        .book-card__cover img {
+
+        .books-ai-card__cover img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center top;
-            display: block;
-            transition: transform 0.4s ease;
+            object-position: center;
+            transition: transform .65s
         }
-        .book-card:hover .book-card__cover img {
-            transform: scale(1.04);
+
+        .books-ai-card:hover img {
+            transform: scale(1.065)
         }
-        .book-card__body {
-            padding: 1.8rem 1.8rem 2.2rem;
+
+        .books-ai-card__badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            padding: 7px 10px;
+            border-radius: 999px;
+            background: #fffffff0;
+            color: #8c5a0b;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            z-index: 2
+        }
+
+        .books-ai-card__body {
+            padding: 22px 10px 8px;
+            flex: 1;
             display: flex;
-            flex-direction: column;
-            flex: 1;
+            flex-direction: column
         }
-        .book-card__title {
-            font-size: 1.6rem;
-            font-weight: 700;
-            line-height: 1.3;
-            margin-bottom: 1rem;
+
+        .books-ai-card__body h3 {
+            margin: 0 0 12px;
+            color: var(--ink);
+            font: 26px/1.12 "Playfair Display", Georgia, serif
+        }
+
+        .books-ai-card__body p {
+            margin: 0 0 18px;
+            color: var(--muted);
+            line-height: 1.6;
+            font-size: 14px
+        }
+
+        .books-ai-meta {
+            display: flex;
+            gap: 15px;
+            color: #73766f;
+            font-size: 12px;
+            margin-bottom: 18px
+        }
+
+        .books-ai-read {
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 15px;
+            border: 1px solid var(--g);
+            border-radius: 10px;
             color: #111;
+            text-decoration: none;
+            font-weight: 700
         }
-        .book-card__desc {
-            font-size: 1.3rem;
-            line-height: 1.7;
-            color: #555;
-            flex: 1;
-            margin-bottom: 2rem;
+
+        .books-ai-read:hover {
+            background: var(--g)
         }
-        .book-card__btn {
-            align-self: flex-start;
+
+        .books-ai-values {
+            margin-top: 28px;
+            border-radius: 22px;
+            padding: 40px;
+            background: radial-gradient(circle at 15% 50%, #f0a01826, transparent 25%), linear-gradient(120deg, #0b100d, #151b16);
+            color: #fff;
+            display: grid;
+            grid-template-columns: 1.25fr 1fr 1fr 1fr;
+            gap: 28px;
+            align-items: center
         }
-        @media (max-width: 900px) {
-            .books-grid { grid-template-columns: repeat(2, 1fr); gap: 3rem; }
+
+        .books-ai-values__quote {
+            font: italic 29px/1.25 Georgia, serif
         }
-        @media (max-width: 600px) {
-            .books-grid { grid-template-columns: 1fr; gap: 2.4rem; }
+
+        .books-ai-values__quote em {
+            color: var(--g)
+        }
+
+        .books-ai-value {
+            padding-left: 25px;
+            border-left: 1px solid #ffffff2e
+        }
+
+        .books-ai-value__icon {
+            width: 45px;
+            height: 45px;
+            display: grid;
+            place-items: center;
+            border: 1px solid var(--g);
+            border-radius: 50%;
+            color: var(--g);
+            margin-bottom: 14px
+        }
+
+        .books-ai-value h4 {
+            color: #fff;
+            margin: 0 0 8px
+        }
+
+        .books-ai-value p {
+            color: #ffffff9e;
+            margin: 0;
+            font-size: 13px
+        }
+
+        .books-ai-newsletter {
+            margin-top: 28px;
+            border-radius: 22px;
+            padding: 45px 55px;
+            background: linear-gradient(110deg, #fffaf0, #f2e6cd);
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            gap: 35px
+        }
+
+        .books-ai-newsletter h2 {
+            margin: 0 0 8px;
+            font: 34px "Playfair Display", Georgia, serif
+        }
+
+        .books-ai-newsletter p {
+            margin: 0;
+            color: #6b6d67
+        }
+
+        .books-ai-form {
+            display: flex;
+            min-width: 430px
+        }
+
+        .books-ai-form input {
+            width: 280px;
+            border: 1px solid #ddd3c2;
+            border-radius: 999px 0 0 999px;
+            padding: 14px 18px
+        }
+
+        .books-ai-form button {
+            border: 0;
+            padding: 0 22px;
+            border-radius: 0 999px 999px 0;
+            background: var(--g);
+            font-weight: 700
+        }
+
+        @media(max-width:900px) {
+
+            .books-ai-hero__inner,
+            .books-ai-newsletter {
+                grid-template-columns: 1fr
+            }
+
+            .books-ai-grid {
+                grid-template-columns: 1fr
+            }
+
+            .books-ai-values {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .books-ai-values__quote {
+                grid-column: 1/-1
+            }
+
+            .books-ai-form {
+                min-width: 0;
+                width: 100%
+            }
+        }
+
+        @media(max-width:600px) {
+            .books-ai-title {
+                font-size: 4rem
+            }
+
+            .books-ai-arch {
+                width: 290px;
+                height: 360px
+            }
+
+            .books-ai-book {
+                width: 75px;
+                height: 270px
+            }
+
+            .books-ai-book:nth-child(2) {
+                height: 310px
+            }
+
+            .books-ai-book:nth-child(3) {
+                height: 250px
+            }
+
+            .books-ai-quote {
+                display: none
+            }
+
+            .books-ai-values {
+                grid-template-columns: 1fr;
+                padding: 28px
+            }
+
+            .books-ai-value {
+                border-left: 0;
+                border-top: 1px solid #ffffff2e;
+                padding: 20px 0 0
+            }
+
+            .books-ai-newsletter {
+                padding: 30px 22px
+            }
+
+            .books-ai-form {
+                display: block
+            }
+
+            .books-ai-form input,
+            .books-ai-form button {
+                width: 100%;
+                border-radius: 999px;
+                min-height: 48px;
+                margin-top: 8px
+            }
         }
     </style>
 
@@ -96,6 +515,427 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
 
+    <style id="books-premium-overrides">
+        .books-ai-hero {
+            position: relative;
+            min-height: 650px;
+            overflow: hidden;
+            color: #fff;
+            background: radial-gradient(circle at 72% 45%, rgba(240, 160, 24, .23), transparent 23%), radial-gradient(circle at 84% 20%, rgba(240, 160, 24, .12), transparent 19%), linear-gradient(115deg, #020403, #080c09 48%, #11150f)
+        }
+
+        .books-ai-hero:before {
+            content: "";
+            position: absolute;
+            width: 560px;
+            height: 560px;
+            right: 13%;
+            top: 50%;
+            transform: translate(50%, -50%);
+            border-radius: 50%;
+            background: rgba(240, 160, 24, .08);
+            filter: blur(75px);
+            pointer-events: none
+        }
+
+        .books-ai-hero:after {
+            content: "✦   ·    ✧       ·   ✦          ·      ✧    ·   ✦";
+            position: absolute;
+            right: 1%;
+            top: 10%;
+            width: 58%;
+            height: 80%;
+            color: rgba(240, 160, 24, .42);
+            font-size: 17px;
+            letter-spacing: 28px;
+            line-height: 82px;
+            opacity: .5;
+            animation: booksParticles 9s ease-in-out infinite alternate;
+            pointer-events: none
+        }
+
+        @keyframes booksParticles {
+            from {
+                transform: translateY(0);
+                opacity: .3
+            }
+
+            to {
+                transform: translateY(-18px);
+                opacity: .7
+            }
+        }
+
+        .books-ai-hero__inner {
+            position: relative;
+            z-index: 3;
+            width: min(1280px, 90%);
+            margin: auto;
+            display: grid;
+            grid-template-columns: minmax(430px, .92fr) minmax(560px, 1.08fr);
+            gap: 30px;
+            align-items: center;
+            padding: 92px 0 78px
+        }
+
+        .books-ai-kicker {
+            display: inline-flex;
+            gap: 10px;
+            align-items: center;
+            color: var(--g);
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            margin-bottom: 22px
+        }
+
+        .books-ai-kicker:after {
+            content: "✦";
+            animation: booksSparkle 2s ease-in-out infinite
+        }
+
+        @keyframes booksSparkle {
+
+            0%,
+            100% {
+                opacity: .6;
+                transform: scale(1)
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.35)
+            }
+        }
+
+        .books-ai-title {
+            margin: 0;
+            max-width: 620px;
+            font-family: "Playfair Display", Georgia, serif;
+            font-size: clamp(4.1rem, 6.5vw, 7rem);
+            line-height: .91;
+            letter-spacing: -.055em;
+            color: #fff
+        }
+
+        .books-ai-title em {
+            position: relative;
+            color: var(--g);
+            font-style: italic
+        }
+
+        .books-ai-title em:after {
+            content: "";
+            position: absolute;
+            left: 5px;
+            right: 0;
+            bottom: -7px;
+            height: 2px;
+            background: var(--g);
+            transform: rotate(-2deg)
+        }
+
+        .books-ai-copy {
+            max-width: 560px;
+            margin: 30px 0 34px;
+            color: #c9ccc6;
+            font-size: 18px;
+            line-height: 1.7
+        }
+
+        .books-ai-actions {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            flex-wrap: wrap
+        }
+
+        .books-ai-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 18px;
+            padding: 17px 25px;
+            border-radius: 12px;
+            background: var(--g);
+            color: #111;
+            font-weight: 800;
+            text-decoration: none;
+            transition: .35s
+        }
+
+        .books-ai-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px rgba(240, 160, 24, .3)
+        }
+
+        .books-ai-btn span {
+            font-size: 20px
+        }
+
+        .books-ai-trailer {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600
+        }
+
+        .books-ai-play {
+            width: 46px;
+            height: 46px;
+            display: grid;
+            place-items: center;
+            border: 1px solid var(--g);
+            border-radius: 50%;
+            color: var(--g);
+            transition: .35s
+        }
+
+        .books-ai-trailer:hover .books-ai-play {
+            background: var(--g);
+            color: #111;
+            transform: scale(1.08)
+        }
+
+        .books-ai-stage {
+            min-height: 500px;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            isolation: isolate;
+            animation: booksFloat 6s ease-in-out infinite
+        }
+
+        @keyframes booksFloat {
+
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-6px)
+            }
+        }
+
+        .books-ai-arch {
+            position: absolute;
+            width: 470px;
+            height: 485px;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            border: 6px solid var(--g);
+            border-bottom: 0;
+            border-radius: 245px 245px 0 0;
+            box-shadow: 0 0 16px rgba(240, 160, 24, .85), 0 0 60px rgba(240, 160, 24, .34);
+            z-index: 1
+        }
+
+        .books-ai-arch:after {
+            content: "";
+            position: absolute;
+            inset: 16px;
+            border-radius: 225px 225px 0 0;
+            background: radial-gradient(ellipse at center, rgba(240, 160, 24, .13), transparent 67%)
+        }
+
+        .books-ai-books {
+            position: relative;
+            z-index: 4;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 9px;
+            height: 455px;
+            filter: drop-shadow(0 28px 28px rgba(0, 0, 0, .78));
+            transition: transform .55s cubic-bezier(.2, .8, .2, 1)
+        }
+
+        .books-ai-book {
+            position: relative;
+            width: 106px;
+            height: 345px;
+            overflow: hidden;
+            border: 1px solid #b87522;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-position: center;
+            background-size: cover;
+            box-shadow: inset 9px 0 17px rgba(0, 0, 0, .5), inset -9px 0 17px rgba(0, 0, 0, .5);
+            transition: transform .4s, filter .4s
+        }
+
+        .books-ai-book:after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(0, 0, 0, .5), transparent 35%, rgba(255, 180, 50, .08) 53%, rgba(0, 0, 0, .5));
+            pointer-events: none
+        }
+
+        .books-ai-book:nth-child(1) {
+            height: 330px;
+            transform: rotate(-1deg) translateY(7px);
+            background-image: linear-gradient(90deg, rgba(15, 5, 1, .35), rgba(120, 65, 10, .1)), url('images/books/blindfolded.jpg')
+        }
+
+        .books-ai-book:nth-child(2) {
+            width: 112px;
+            height: 400px;
+            transform: translateY(-13px);
+            background-image: linear-gradient(90deg, rgba(25, 8, 1, .28), rgba(180, 100, 15, .08)), url('images/books/last-bloom.jpg');
+            box-shadow: 0 0 25px rgba(240, 160, 24, .18), inset 9px 0 18px rgba(0, 0, 0, .5), inset -9px 0 18px rgba(0, 0, 0, .5)
+        }
+
+        .books-ai-book:nth-child(3) {
+            height: 320px;
+            transform: rotate(1deg) translateY(9px);
+            background-image: linear-gradient(90deg, rgba(0, 20, 14, .3), rgba(20, 80, 60, .08)), url('images/books/arjuna.jpg');
+            border-color: #35705e
+        }
+
+        .books-ai-book span {
+            position: relative;
+            z-index: 3;
+            padding: 8px;
+            color: #f7c56b;
+            font-family: Georgia, serif;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: .12em;
+            writing-mode: vertical-rl;
+            text-transform: uppercase;
+            text-shadow: 0 2px 5px #000
+        }
+
+        .books-ai-book:hover {
+            filter: brightness(1.12)
+        }
+
+        .books-ai-quote {
+            position: absolute;
+            right: -4px;
+            top: 47%;
+            transform: translateY(-50%);
+            width: 175px;
+            color: #f5eee0;
+            font: italic 18px/1.5 Georgia, serif;
+            z-index: 6
+        }
+
+        .books-ai-quote:before {
+            content: "“";
+            display: block;
+            color: var(--g);
+            font-size: 68px;
+            line-height: .45;
+            margin-bottom: 12px
+        }
+
+        .books-ai-quote strong {
+            display: block;
+            margin-top: 14px;
+            color: var(--g);
+            font-size: 13px
+        }
+
+        .books-ai-card {
+            transition: transform .45s ease, box-shadow .45s ease, border-color .45s ease
+        }
+
+        .books-ai-card:hover {
+            transform: translateY(-10px) scale(1.01)
+        }
+
+        @media(max-width:1000px) {
+            .books-ai-hero__inner {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .books-ai-title {
+                font-size: clamp(3.7rem, 6vw, 5.7rem)
+            }
+
+            .books-ai-quote {
+                right: -20px;
+                width: 135px;
+                font-size: 15px
+            }
+        }
+
+        @media(max-width:900px) {
+            .books-ai-hero__inner {
+                grid-template-columns: 1fr;
+                padding: 85px 0 70px
+            }
+
+            .books-ai-stage {
+                min-height: 500px
+            }
+
+            .books-ai-grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        @media(max-width:600px) {
+            .books-ai-hero__inner {
+                width: 88%;
+                padding: 75px 0 55px
+            }
+
+            .books-ai-title {
+                font-size: 3.5rem
+            }
+
+            .books-ai-copy {
+                font-size: 16px
+            }
+
+            .books-ai-stage {
+                min-height: 390px
+            }
+
+            .books-ai-arch {
+                width: 290px;
+                height: 350px;
+                border-width: 4px
+            }
+
+            .books-ai-books {
+                height: 335px;
+                gap: 5px
+            }
+
+            .books-ai-book {
+                width: 68px;
+                height: 250px
+            }
+
+            .books-ai-book:nth-child(2) {
+                width: 76px;
+                height: 285px
+            }
+
+            .books-ai-book:nth-child(3) {
+                height: 235px
+            }
+
+            .books-ai-book span {
+                font-size: 10px
+            }
+
+            .books-ai-quote {
+                display: none
+            }
+        }
+    </style>
 </head>
 
 
@@ -166,63 +1006,117 @@
 
         <!-- # site main content
         ================================================== -->
-        <section id="content" class="s-content">
-            <section class="s-pageheader pageheader">
-                <div class="row">
-                    <div class="column xl-12 text-center">
-                        <h1 class="page-title">
-                            <span class="page-title__small-type text-pretitle">Books</span> By Monica Jivnani
-                        </h1>
+        <section id="content" class="s-content books-ai-page">
+            <section class="books-ai-hero">
+                <div class="books-ai-hero__inner">
+                    <div class="books-ai-hero__content">
+                        <div class="books-ai-kicker">BOOKS</div>
+                        <h1 class="books-ai-title">Stories that<br><em>inspire</em>, lessons<br>that stay.</h1>
+                        <p class="books-ai-copy">Books that explore timeless epics, powerful women, and the choices that
+                            shape destinies.</p>
+                        <div class="books-ai-actions">
+                            <a class="books-ai-btn" href="#featured-books">Explore Books <span>→</span></a>
+
+                        </div>
+                    </div>
+                    <div class="books-ai-stage">
+                        <div class="books-ai-arch"></div>
+                        <div class="books-ai-books">
+                            <div class="books-ai-book"><span>Blindfolded</span></div>
+                            <div class="books-ai-book"><span>Mahabharata</span></div>
+                            <div class="books-ai-book"><span>Women Who Waited</span></div>
+                        </div>
+                        <div class="books-ai-quote">Every story carries a choice. Every choice creates a
+                            destiny.<strong>— Monica Jivnani</strong></div>
                     </div>
                 </div>
             </section>
 
-            <div class="row">
-                <div class="column xl-12">
-                    <div class="books-grid">
+            <section id="featured-books" class="books-ai-featured">
+                <div class="books-ai-wrap">
+                    <div class="books-ai-section-head">
+                        <h2>Featured <span>Books</span></h2><a class="books-ai-section-link" href="#featured-books">View
+                            All Books&nbsp; →</a>
+                    </div>
 
-                        <!-- BOOK 01 -->
-                        <div class="book-card">
-                            <div class="book-card__cover">
-                                <img src="images/books/last-bloom.jpg" alt="The Last Bloom Before the Fall">
+                    <div class="books-ai-grid">
+                        <article class="books-ai-card">
+                            <div class="books-ai-card__cover"><span class="books-ai-card__badge">Epic Love
+                                    Story</span><img src="images/books/last-bloom.jpg"
+                                    alt="The Last Bloom Before The Fall"></div>
+                            <div class="books-ai-card__body">
+                                <h3>The Last Bloom Before The Fall</h3>
+                                <p>A lyrical reimagining of epic love and loss, told through the eyes of those who stood
+                                    true, even in downfall.</p>
+                                <div class="books-ai-meta"><span>Love story</span><span></span></div><a
+                                    href="https://books2read.com/u/3GQxEa" target="_blank" rel="noopener"
+                                    class="books-ai-read">Read More <span>→</span></a>
                             </div>
-                            <div class="book-card__body">
-                                <h3 class="book-card__title">The Last Bloom Before The Fall</h3>
-                                <p class="book-card__desc">About the last beautiful things that appear before something ends: a relationship, a season, a version of yourself you're about to leave behind. If you've ever held onto something while knowing it was changing, this book will feel familiar. It's written with care and a lot of close attention to how people actually feel in those moments.</p>
-                                <a href="https://books2read.com/u/3GQxEa" target="_blank" class="btn btn--primary btn--small book-card__btn">Buy Now</a>
+                        </article>
+
+                        <article class="books-ai-card">
+                            <div class="books-ai-card__cover"><span class="books-ai-card__badge">Strength &
+                                    Choice</span><img src="images/books/blindfolded.jpg"
+                                    alt="Blindfolded: The Queen Who Chose Darkness"></div>
+                            <div class="books-ai-card__body">
+                                <h3>Blindfolded: The Queen Who Chose Darkness</h3>
+                                <p>A gripping story of a queen who chose darkness over the truth she could no longer
+                                    see.</p>
+                                <div class="books-ai-meta"><span>Historical Fiction</span><span></span></div><a
+                                    href="https://books2read.com/u/38XQPZ" target="_blank" rel="noopener"
+                                    class="books-ai-read">Read More <span>→</span></a>
                             </div>
+                        </article>
+
+                        <article class="books-ai-card">
+                            <div class="books-ai-card__cover"><span class="books-ai-card__badge">Poetic
+                                    Retelling</span><img src="images/books/arjuna.jpg"
+                                    alt="Arjuna and the Women Who Waited"></div>
+                            <div class="books-ai-card__body">
+                                <h3>Arjuna and the Women Who Waited</h3>
+                                <p>A poetic retelling of love, loyalty and the women who waited while history was
+                                    written.</p>
+                                <div class="books-ai-meta"><span>Poetry & Mythology</span><span></span></div><a
+                                    href="https://books2read.com/u/bpoVxE" target="_blank" rel="noopener"
+                                    class="books-ai-read">Read More <span>→</span></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="books-ai-values">
+                        <div class="books-ai-values__quote">“My books are born from <em>timeless epics</em>, but written
+                            for today's dreamers.”</div>
+                        <div class="books-ai-value">
+                            <div class="books-ai-value__icon">✎</div>
+                            <h4>Thoughtful Storytelling</h4>
+                            <p>Every word has a purpose.</p>
                         </div>
-
-                        <!-- BOOK 02 -->
-                        <div class="book-card">
-                            <div class="book-card__cover">
-                                <img src="images/books/arjuna.jpg" alt="Arjuna and the Women Who Waited">
-                            </div>
-                            <div class="book-card__body">
-                                <h3 class="book-card__title">Arjuna and the Women Who Waited</h3>
-                                <p class="book-card__desc">This is a story about what it means to be waiting for and what it costs the people doing the waiting. Arjun moves through a world shaped by the women around him, each of them carrying something he doesn't fully see. It's a quiet book, but it has weight. The kind of story that stays with you after you put it down.</p>
-                                <a href="https://books2read.com/u/bpoVxE" target="_blank" class="btn btn--primary btn--small book-card__btn">Buy Now</a>
-                            </div>
+                        <div class="books-ai-value">
+                            <div class="books-ai-value__icon">♧</div>
+                            <h4>Timeless Wisdom</h4>
+                            <p>Ancient tales with modern meaning.</p>
                         </div>
-
-                        <!-- BOOK 03 -->
-                        <div class="book-card">
-                            <div class="book-card__cover">
-                                <img src="images/books/blindfolded.jpg" alt="Blindfolded: The Queen Who Chose Darkness">
-                            </div>
-                            <div class="book-card__body">
-                                <h3 class="book-card__title">Blindfolded: The Queen Who Chose Darkness</h3>
-                                <p class="book-card__desc">A tighter, faster story than my first two. About decisions made without the full picture and how people live with what follows. Less quiet, more urgent, the kind of book that keeps you reading past the time you planned to stop.</p>
-                                <a href="https://books2read.com/u/38XQPZ" target="_blank" class="btn btn--primary btn--small book-card__btn">Buy Now</a>
-                            </div>
+                        <div class="books-ai-value">
+                            <div class="books-ai-value__icon">♡</div>
+                            <h4>Emotional Connection</h4>
+                            <p>Stories that stay with you.</p>
                         </div>
+                    </div>
 
+                    <div class="books-ai-newsletter">
+                        <div>
+                            <h2>Stay updated with <em>new stories</em></h2>
+                            <p></p>
+                        </div>
+                        <form class="books-ai-form" onsubmit="return false;"><input type="email"
+                                placeholder="Your email address" aria-label="Email address"><button
+                                type="submit">Subscribe&nbsp; →</button></form>
                     </div>
                 </div>
-            </div>
+            </section>
+        </section>
 
-        </section>
-        </section>
+
 
         <section id="cta" class="s-cta">
 
@@ -252,94 +1146,126 @@
         <!-- end s-cta -->
 
 
-        <!-- # footer 
-        ================================================== -->
-        <footer class="s-footer">
-            <div class="row s-footer__content">
-                <div class="column xl-6 lg-6 md-12 s-footer__block s-footer__about">
-                    <h3>About Monica</h3>
-                    <br>
-                    <p>
-                        Monica is an author and storyteller whose work reimagines epic narratives through the voices of
-                        women, silence, and emotional depth. Drawing inspiration from the Mahabharata, her writing
-                        explores love, sacrifice, dignity, and the unseen strength that
-                        shapes destinies. Her books blend lyrical prose with timeless myth to create intimate,
-                        reflective storytelling.
-
-                </div>
-                <div class="column xl-3 lg-6 md-12 s-footer__block s-footer__site-links">
-                    <h3>Site Links</h3>
-                    <br>
-                    <ul class="link-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="books.html">Books</a></li>
-
-                        <li><a href="contact.html">Contact</a></li>
-
-                    </ul>
-                </div>
-                <!-- <div class="column xl-3 lg-6 md-12 tab-12 s-footer__block s-footer__newsletter">
-                <h3>Newsletter</h3>
-                <br>
-                <p>
-                    Subscribe to receive updates on new book releases, writing insights, and exclusive content.
-                </p>
-
-                <div class="subscribe-form">
-                    <form id="mc-form" class="mc-form">
-                        <input type="email" name="EMAIL" id="mce-EMAIL" class="u-fullwidth text-center" placeholder="Your Email Address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
-                            required>
-                        <input type="submit" name="subscribe" value="Subscribe" class="btn btn--primary btn--small u-fullwidth">
-                         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cdb7b577e41181934ed6a6a44_9a91cfe7b3" tabindex="-1" value=""></div>
-                        <div class="mc-status"></div>
-                    </form>
-                </div>
-            </div>-->
-            </div>
-
-            <div class="row s-footer__bottom">
-                <div class="column xl-6 lg-12">
-                    <ul class="s-footer__social social-list">
-
-                        <li>
-                            <a href="https://www.linkedin.com/in/monikaben" target="_blank" rel="noopener">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    style="fill:rgba(0, 0, 0, 1);">
-                                    <path
-                                        d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8h4.56v14H.22V8zM7.91 8h4.37v1.91h.06c.61-1.15 2.1-2.37 4.33-2.37 4.63 0 5.49 3.05 5.49 7.02V22h-4.56v-6.29c0-1.5-.03-3.43-2.09-3.43-2.09 0-2.41 1.63-2.41 3.32V22H7.91V8z" />
-                                </svg>
-                                <span class="u-screen-reader-text">LinkedIn</span>
-                            </a><br>
-                            <span>
-
-                                <a href="https://monicajivnani.online/" target="_blank" rel="noopener">
-                                    © Copyright Monica 2026
-                                </a>
-                            </span>
-                        </li>
-                    </ul>
-                    <!-- end s-footer__social -->
-                </div>
-                <div class="column xl-6 lg-12">
-                    <p></p>
-
-                </div>
-
-                <div class="ss-go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none"
-                            stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">&lt;!--!
-                            Atomicons Free 1.00 by @atisalab License - https://atomicons.com/license/ (Icons: CC BY 4.0)
-                            Copyright 2021 Atomicons --&gt;<polyline points="17 11 12 6 7 11"></polyline>
-                            <line x1="12" y1="18" x2="12" y2="6"></line>
-                        </svg>
+        <!-- ==================================================
+                 PREMIUM FOOTER
+            ================================================== -->
+        
+        <footer class="mj-footer">
+        
+            <div class="mj-footer-main">
+        
+                <!-- BRAND / LOGO -->
+                <div class="mj-footer-brand">
+        
+                    <a href="index.html" class="mj-footer-logo">
+        
+                        <span class="mj-logo-mark">M</span>
+        
+                        <span class="mj-logo-text">
+                            MONICA
+                            <small>TECH FOUNDER • AI • PRODUCT EXECUTION</small>
+                        </span>
+        
                     </a>
+        
+                    <p class="mj-footer-description">
+                        Monica Jivnani is the founder of MaMo TechnoLabs LLP,
+                        a CMMI Level 3 global IT company based in Vadodara, India.
+                        With 15+ years of experience across technology, product,
+                        business and leadership, she works with businesses across
+                        international markets.
+                    </p>
+        
                 </div>
-                <!-- end ss-go-top -->
+        
+        
+                <!-- QUICK LINKS -->
+                <div class="mj-footer-links">
+        
+                    <p class="mj-footer-label">EXPLORE</p>
+        
+                    <h3>Quick Links</h3>
+        
+                    <nav class="footer-nav">
+        
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="services.html">Services</a>
+                        <a href="books.html">Books</a>
+                        <a href="contact.html">Contact</a>
+        
+                    </nav>
+        
+                </div>
+        
+        
+                <!-- LET'S CONNECT -->
+                <div class="mj-footer-connect">
+        
+                    <p class="mj-footer-label">LET'S CONNECT</p>
+        
+                    <h3>
+                        Have an idea?
+                        <br>
+                        <em>Let's build it.</em>
+                    </h3>
+        
+                    <p>
+                        Let's start a conversation and explore how
+                        technology can turn your ideas into meaningful
+                        solutions.
+                    </p>
+        
+                    <a href="contact.html" class="mj-footer-connect-btn">
+                        Connect With Me
+                        <span>↗</span>
+                    </a>
+        
+                </div>
+        
             </div>
-
+        
+        
+            <!-- FOOTER BOTTOM -->
+            <div class="mj-footer-bottom">
+        
+                <div class="mj-footer-social">
+        
+                    <a href="https://www.linkedin.com/in/monikaben" target="_blank" rel="noopener" aria-label="LinkedIn">
+        
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        
+                            <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5
+                                1.12 1 2.5 1 4.98 2.12 4.98 3.5z
+                                M.22 8h4.56v14H.22V8z
+                                M7.91 8h4.37v1.91h.06c.61-1.15
+                                2.1-2.37 4.33-2.37 4.63 0 5.49 3.05
+                                5.49 7.02V22h-4.56v-6.29
+                                c0-1.5-.03-3.43-2.09-3.43
+                                -2.09 0-2.41 1.63-2.41 3.32V22H7.91V8z" />
+        
+                        </svg>
+        
+                        <span>LinkedIn</span>
+        
+                    </a>
+        
+                </div>
+        
+        
+                <p class="mj-footer-copy">
+                    © 2026 Monica Jivnani. All rights reserved.
+                </p>
+        
+        
+                <a href="#top" class="mj-footer-top" aria-label="Back to top">
+        
+                    <span>↑</span>
+        
+                </a>
+        
+            </div>
+        
         </footer>
         <!-- end s-footer -->
 
@@ -391,7 +1317,7 @@
                         <li>
                             <span>📧</span> monica@mamotechnolabs.com
                         </li>
-                        
+
                     </ul>
                 </div>
 
@@ -401,6 +1327,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="js/contact-modal.js"></script>
+    <script src="js/enhance.js"></script>
 
 </body>
 

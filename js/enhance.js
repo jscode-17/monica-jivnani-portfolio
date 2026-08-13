@@ -88,3 +88,197 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 });
+/* =========================================================
+   EXPERTISE CARD INTERACTION
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const expertiseCards =
+        document.querySelectorAll(".expertise-card");
+
+
+    expertiseCards.forEach(function (card) {
+
+        card.addEventListener("mousemove", function (e) {
+
+            const rect =
+                card.getBoundingClientRect();
+
+            const x =
+                e.clientX - rect.left;
+
+            const y =
+                e.clientY - rect.top;
+
+            const centerX =
+                rect.width / 2;
+
+            const centerY =
+                rect.height / 2;
+
+            const rotateX =
+                ((y - centerY) / centerY) * -2;
+
+            const rotateY =
+                ((x - centerX) / centerX) * 2;
+
+
+            card.style.transform =
+                `translateY(-10px)
+                 perspective(1000px)
+                 rotateX(${rotateX}deg)
+                 rotateY(${rotateY}deg)`;
+
+        });
+
+
+        card.addEventListener("mouseleave", function () {
+
+            card.style.transform = "";
+
+        });
+
+    });
+
+
+    /* =====================================================
+       SCROLL REVEAL
+    ===================================================== */
+
+    const revealItems =
+        document.querySelectorAll(
+            ".expertise-card, .expertise-modern__intro, .expertise-mission"
+        );
+
+
+    const revealObserver =
+        new IntersectionObserver(
+            function (entries) {
+
+                entries.forEach(function (entry) {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add(
+                            "expertise-visible"
+                        );
+
+                        revealObserver.unobserve(
+                            entry.target
+                        );
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+
+    revealItems.forEach(function (item) {
+
+        revealObserver.observe(item);
+
+    });
+
+});
+/* =========================================================
+   PREMIUM CLIENT FILTER
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const filters =
+        document.querySelectorAll(".clients-filter");
+
+    const cards =
+        document.querySelectorAll(".client-premium-card");
+
+
+    filters.forEach(function (filter) {
+
+        filter.addEventListener("click", function () {
+
+            const selected =
+                this.getAttribute("data-filter");
+
+
+            /* Active button */
+
+            filters.forEach(function (item) {
+
+                item.classList.remove("active");
+
+            });
+
+            this.classList.add("active");
+
+
+            /* Filter cards */
+
+            cards.forEach(function (card) {
+
+                const category =
+                    card.getAttribute("data-category");
+
+
+                if (
+                    selected === "all" ||
+                    category === selected
+                ) {
+
+                    card.classList.remove("is-hidden");
+
+                    card.style.animation =
+                        "clientCardIn .5s ease both";
+
+                } else {
+
+                    card.classList.add("is-hidden");
+
+                }
+
+            });
+
+        });
+
+    });
+
+});
+/* =========================================================
+   CLIENT CARD ANIMATION
+========================================================= */
+
+const clientAnimationStyle =
+    document.createElement("style");
+
+clientAnimationStyle.textContent = `
+    @keyframes clientCardIn {
+
+        from {
+            opacity: 0;
+            transform: translateY(18px) scale(.97);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+    }
+`;
+
+document.head.appendChild(clientAnimationStyle);
+
+/* BOOKS PREMIUM INTERACTIONS */
+document.addEventListener('DOMContentLoaded',function(){
+ var stage=document.querySelector('.books-ai-stage'),books=document.querySelector('.books-ai-books');
+ if(stage&&books&&window.matchMedia('(min-width:901px)').matches){
+  stage.addEventListener('mousemove',function(e){var r=stage.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;books.style.transform='translate('+x*14+'px,'+y*-10+'px) rotateY('+(x*5)+'deg) rotateX('+(y*-3)+'deg)';});
+  stage.addEventListener('mouseleave',function(){books.style.transform='';});
+ }
+});

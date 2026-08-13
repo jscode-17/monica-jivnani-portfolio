@@ -7270,3 +7270,342 @@ body {
         margin-bottom: 10px;
     }
 }
+
+/* ================================
+   MONICA FOOTER
+================================ */
+
+.mj-footer {
+    position: relative;
+    background: #151916;
+    color: #f4f0e8;
+    border-top: 1px solid rgba(226, 158, 10, 0.35);
+    overflow: hidden;
+}
+
+.mj-footer::before {
+    content: "";
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    border: 1px solid rgba(226, 158, 10, 0.08);
+    border-radius: 50%;
+    left: -300px;
+    bottom: -300px;
+    pointer-events: none;
+}
+
+.mj-footer-main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 60px 90px;
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr;
+    gap: 160px;
+}
+
+.mj-footer-label {
+    margin: 0 0 24px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #e5a00b;
+}
+
+.mj-footer-label::before {
+    content: "";
+    display: inline-block;
+    width: 38px;
+    height: 1px;
+    background: #e5a00b;
+    margin-right: 14px;
+    vertical-align: middle;
+}
+
+.mj-footer-about h2 {
+    margin: 0 0 30px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 5vw, 76px);
+    line-height: 0.95;
+    font-weight: 400;
+    letter-spacing: -2px;
+    color: #f4f0e8;
+}
+
+.mj-footer-about h2 em {
+    color: #e5a00b;
+    font-style: italic;
+}
+
+.mj-footer-description {
+    max-width: 650px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.9;
+    color: rgba(244, 240, 232, 0.65);
+}
+
+.mj-footer-links {
+    padding-top: 8px;
+}
+
+.mj-footer-links h3 {
+    margin: 0 0 32px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #f4f0e8;
+}
+
+.mj-footer-links nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.mj-footer-links nav a {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(244, 240, 232, 0.08);
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: rgba(244, 240, 232, 0.7);
+    transition: 0.3s ease;
+}
+
+.mj-footer-links nav a span {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #e5a00b;
+}
+
+.mj-footer-links nav a:hover {
+    color: #e5a00b;
+    padding-left: 8px;
+}
+
+.mj-footer-bottom {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 26px 60px;
+    border-top: 1px solid rgba(244, 240, 232, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.mj-footer-social a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: rgba(244, 240, 232, 0.55);
+    transition: 0.3s ease;
+}
+
+.mj-footer-social svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.mj-footer-social a:hover {
+    color: #e5a00b;
+}
+
+.mj-footer-copy {
+    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: rgba(244, 240, 232, 0.4);
+}
+
+.mj-footer-top {
+    justify-self: end;
+    width: 52px;
+    height: 52px;
+    border: 1px solid rgba(244, 240, 232, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #f4f0e8;
+    transition: 0.3s ease;
+}
+
+.mj-footer-top span {
+    font-size: 20px;
+}
+
+.mj-footer-top:hover {
+    background: #e5a00b;
+    border-color: #e5a00b;
+    color: #151916;
+    transform: translateY(-4px);
+}
+
+@media (max-width: 900px) {
+
+    .mj-footer-main {
+        grid-template-columns: 1fr;
+        gap: 70px;
+        padding: 75px 30px 60px;
+    }
+
+    .mj-footer-about h2 {
+        font-size: 56px;
+    }
+
+    .mj-footer-bottom {
+        padding: 25px 30px;
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .mj-footer-copy {
+        text-align: left;
+    }
+
+    .mj-footer-top {
+        justify-self: start;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .mj-footer-main {
+        padding: 60px 22px 50px;
+    }
+
+    .mj-footer-about h2 {
+        font-size: 44px;
+        letter-spacing: -1px;
+    }
+
+    .mj-footer-description {
+        font-size: 14px;
+    }
+
+    .mj-footer-links h3 {
+        font-size: 28px;
+    }
+
+    .mj-footer-bottom {
+        padding: 22px;
+    }
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+    max-width: 360px;
+}
+
+.footer-nav a {
+    display: flex;
+    align-items: center;
+    padding: 17px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+
+    color: #e9e6df;
+    text-decoration: none;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    transition: all 0.3s ease;
+}
+
+.footer-nav a:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.footer-nav a:hover {
+    color: #d89a19;
+    padding-left: 8px;
+}
+.mj-footer-main {
+    position: relative;
+    z-index: 2;
+
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: grid;
+
+    /* ABOUT | SITE LINKS | LET'S CONNECT */
+    grid-template-columns: 1.7fr 0.9fr 1.1fr;
+
+    column-gap: 80px;
+}
+.mj-footer-connect {
+    margin: 0;
+    padding: 0;
+}
+
+.mj-footer-connect h3 {
+    margin: 0 0 22px;
+
+    color: #f2eee6;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.08;
+}
+
+.mj-footer-connect h3 em {
+    color: #d99a16;
+    font-style: italic;
+}
+
+.mj-footer-connect>p:not(.mj-footer-label) {
+    max-width: 340px;
+    margin: 0 0 28px;
+
+    color: rgba(242, 238, 230, 0.62);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.mj-footer-connect-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 15px 24px;
+
+    background: #d99a16;
+    color: #11140f;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.mj-footer-connect-btn:hover {
+    background: #efb52f;
+    transform: translateY(-3px);
+}
+
+.mj-footer-connect-btn span {
+    font-size: 17px;
+}
+
